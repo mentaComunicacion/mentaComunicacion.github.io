@@ -1,6 +1,13 @@
 ---
 date: "2016-05-05T21:48:51-07:00"
-title: About
+title: menta Comunicación
 ---
 
-This is a "hello world" example website for the [**blogdown**](https://github.com/rstudio/blogdown) package. The theme was forked from [@jrutheiser/hugo-lithium-theme](https://github.com/jrutheiser/hugo-lithium-theme) and modified by [Yihui Xie](https://github.com/yihui/hugo-lithium).
+Este blog es un espacio para compartir ideas e investigaciones del equipo de datos de [mentaComunicación](http://mentacomunicacion.com.ar/bigdata/). Algunos de nuestros desarrollos abiertos al público son:
+
+* [**mentaBuzz**](http://buzz.mentacomunicacion.com.ar/):  Explorador autómatico de noticias en los portales digitales de medios de mayor alcance de Argentina.
+
+* [**i.menta**](socioeconomico.mentacomunicacion.com.ar): Aplicación interactiva para visualizar el índice menta de características socioeconómicas de Argentina por radio censal.
+
+* [**InteligenciaElectoral**](http://mentacomunicacion.com.ar/inteligencia-electoral/): Herramienta interactiva para la visualización de resultados de las elecciones presidenciales de Argentina (2015 – 2019)
+
