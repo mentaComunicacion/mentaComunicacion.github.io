@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.60.0" />
+
+
+<title>Interacciones en Twitter - mentaComunicación</title>
+<meta property="og:title" content="Interacciones en Twitter - mentaComunicación">
+
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="https://github.com/mentaComunicacion">GitHub</a></li>
+    
+    <li><a href="/about/">menta</a></li>
+    
+    <li><a href="https://twitter.com/menta_arg">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">3 min read</span>
+    
+
+    <h1 class="article-title">Interacciones en Twitter</h1>
+
+    
+    <span class="article-date">2019-11-28</span>
+    
+
+    <div class="article-content">
+      
+
+
+<p><strong>Análisis del equipo de datos de <a href="http://mentacomunicacion.com.ar/bigdata/">mentaComunicación</a><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></strong></p>
+<hr />
+<p>Twitter es la plataforma preferida para el análisis de datos políticos en redes. Hay por lo menos dos razones que lo explican: (a) es allí donde la mayoría de los dirigentes políticos se expresan (y, por ende, donde el público que consume información política interactúa); y (b) es la red que disponibiliza libremente grandes volumenes de información.</p>
+<div id="trump-el-presidente-twittero" class="section level2">
+<h2>Trump, el presidente <em>twittero</em></h2>
+<blockquote>
+<p>“<em>Donald Trump usa Twitter como ningún otro jefe de estado</em>” -<strong>YouGob</strong></p>
+</blockquote>
+<p>Aunque desde la administración Obama ya se había incorporado la plataforma como un mecanismo más del flujo comunicacional, los modos (y mensajes) disruptivos de Trump utilizando Twitter para comunicar llamaron rápidamente la atención. No solo del gran público, sino también de investigadores y analistas.</p>
+<p>“<em>El presidente de los Estados Unidos resuelve comunicar sus decisiones a través de Twitter</em>”, sostiene <a href="https://twitter.com/TomiOlava">Tomás Aguerre</a> (<a href="http://papel.revistafibra.info/trump-gobierno-twitter/">acá</a>). Sobre ello le preguntó a <a href="https://twitter.com/EugeniaGiraudy">Eugenia Giraudy</a>, entonces investigadora de <strong><em>YouGob</em></strong> donde trabajó en un <a href="https://tweetindex.yougov.com/">proyecto</a> dedicado a relevar la reacción que generan las publicaciones del presidente de EE.UU. sobre una muestra representativa de votantes.</p>
+<p><strong><em>FiveThirtyEight</em></strong> abordó la cuestión desde otro ángulo: no ya sobre el impacto que el contenido de los tuits tiene sobre la opinión de los lectores/votantes, sino del modo en que los demás usuarios interactuan con esas mismas publicaciones con el objetivo de responder una simple pregunta: ¿<em>Es Trump el peor tuitero político?</em> <a href="https://fivethirtyeight.com/features/the-worst-tweeter-in-politics-isnt-trump/"><strong>Spoilert alert</strong>: no lo es</a> .</p>
+<p><img src="https://fivethirtyeight.com/wp-content/uploads/2017/10/roedermehta-tweets-1.png?w=575" /></p>
+</div>
+<div id="el-mal-ratio-y-la-grieta-argentina-en-twitter" class="section level1">
+<h1>El mal <em>ratio</em> y la grieta argentina en Twitter</h1>
+<p>El análisis de <em>FiveThirtyEight</em> sobre la <em>tuitosfera</em> política de EE.UU. parte de unos supuestos básicos:</p>
+<ol style="list-style-type: decimal">
+<li>Les usuaries interactúan con el contenido de tres formas <a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>:</li>
+</ol>
+<ul>
+<li><code>*fav*</code> (me gusta - MG): la acción que menos exige / expone al que interactúa. La reacción más común en Twitter.</li>
+<li><code>*retweet*</code> (re publicación - RT): mantiene la economía de esfuerzo del anterior, pero hace más visible la interacción con el resto.</li>
+<li><code>*reply*</code> (respuesta - RP): el tipo de reacción que implica mayor esfuerzo al tener que elaborar una respuesta.</li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li><strong><em>“Si tuviste más respuestasa a un tuit que favs o RT, entonces la cagaste”</em></strong>. Cuando el <code>RATIO</code> (originalmente descripto <a href="https://www.esquire.com/news-politics/news/a54440/twitter-ratio-reply/">acá</a>) toma valores altos es indicador de que la recepción del tuit fue muy mala.</li>
+</ol>
+<p><span class="math display">\[RATIO = \frac{Respuestas}{Favs + RT} *100\]</span></p>
+<p>Con estas ideas en mente Luciano Galup y J.P. Pilorget replicaron el análisis para el caso argentino y publicaron <a href="https://www.perfil.com/noticias/politica/la-grieta-graficada.phtml"><em>La Grieta Graficada</em></a>. El análisis de los tuits agrupados por espacio político muestra que también en Twitter “aquellos que no forman parte de uno de los dos polos del debate la sufren y encuentran mucho más rechazo en sus publicaciones”.</p>
+<p>La forma de graficarlo para visualizarlo es también simple a partir de gráficos ternarios. Estos muestran la relación entre las tres variables (<code>retweet</code>, <code>fav</code> y <code>respuesta</code>), donde los vértices del triángulo representan a cada una de ellas. Cuanto más se acerca un punto (un tweet) a un vértice, mayor es el valor de esa variable respecto de las otras. Por ende, cuanto más se expande la nube de puntos de la pared derecha (segmento que une los <code>fav</code> y <code>rt</code>) más alto será el valor del <code>RATIO</code>.</p>
+<p><img src="https://raw.githubusercontent.com/TuQmano/data_TuQmanoR/master/grieta.png" style="width:100.0%" /></p>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p><a href="https://twitter.com/chig4_">Camila</a> Higa y <a href="https://twitter.com/tuqmano">Juan Pablo</a> Ruiz Nicolini .<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>Existe otra acción posible - citar tweet - pero se entiende que esta es una nueva intervención sobre una publicación existente y no simplemente una reacción.<a href="#fnref2" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+

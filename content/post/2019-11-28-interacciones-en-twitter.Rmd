@@ -1,0 +1,53 @@
+---
+title: Interacciones en Twitter
+author: menta
+date: '2019-11-28'
+slug: interacciones-en-twitter
+categories:
+  - redes
+tags: []
+---
+
+
+
+**Análisis del equipo de datos de [mentaComunicación](http://mentacomunicacion.com.ar/bigdata/)[^1]**
+
+[^1]: [Camila](https://twitter.com/chig4_) Higa y [Juan Pablo](https://twitter.com/tuqmano) Ruiz Nicolini . 
+
+---
+
+Twitter es la plataforma preferida para el análisis de datos políticos en redes. Hay por lo menos dos razones que lo explican: (a) es allí donde la mayoría de los dirigentes políticos se expresan (y, por ende, donde el público que consume información política interactúa); y (b) es la red que disponibiliza libremente grandes volumenes de información. 
+
+## Trump, el presidente _twittero_ 
+
+>"*Donald Trump usa Twitter como ningún otro jefe de estado*" -**YouGob**
+
+Aunque desde la administración Obama ya se había incorporado la plataforma como un mecanismo más del flujo comunicacional, los modos (y mensajes) disruptivos de Trump utilizando Twitter para comunicar llamaron rápidamente la atención. No solo del gran público, sino también de investigadores y analistas.
+
+"_El presidente de los Estados Unidos resuelve comunicar sus decisiones a través de Twitter_", sostiene [Tomás Aguerre](https://twitter.com/TomiOlava) ([acá](http://papel.revistafibra.info/trump-gobierno-twitter/)). Sobre ello le preguntó a [Eugenia Giraudy](https://twitter.com/EugeniaGiraudy), entonces investigadora de ***YouGob*** donde trabajó en un [proyecto](https://tweetindex.yougov.com/) dedicado a relevar la reacción que generan las publicaciones del presidente de EE.UU. sobre una muestra representativa de votantes. 
+
+***FiveThirtyEight*** abordó la cuestión desde otro ángulo: no ya sobre el impacto que el contenido de los tuits tiene sobre la opinión de los lectores/votantes, sino del modo en que los demás usuarios interactuan con esas mismas publicaciones con el objetivo de responder una simple pregunta: ¿_Es Trump el peor tuitero político?_ [**Spoilert alert**: no lo es](https://fivethirtyeight.com/features/the-worst-tweeter-in-politics-isnt-trump/) . 
+
+![](https://fivethirtyeight.com/wp-content/uploads/2017/10/roedermehta-tweets-1.png?w=575)
+
+# El mal _ratio_ y la grieta argentina en Twitter
+
+El análisis de *FiveThirtyEight* sobre la *tuitosfera* política de EE.UU. parte de unos supuestos básicos: 
+
+1. Les usuaries interactúan con el contenido de tres formas [^2]: 
+
+[^2]: Existe otra acción posible - citar tweet - pero se entiende que esta es una nueva intervención sobre una publicación existente y no simplemente una reacción.
+
+* `*fav*` (me gusta - MG): la acción que menos exige / expone al que interactúa. La reacción más común en Twitter. 
+* `*retweet*` (re publicación - RT): mantiene la economía de esfuerzo del anterior, pero hace más visible la interacción con el resto. 
+* `*reply*` (respuesta - RP): el tipo de reacción que implica mayor esfuerzo al tener que elaborar una respuesta. 
+
+2. ***"Si tuviste más respuestasa a un tuit que favs o RT, entonces la cagaste"***. Cuando el `RATIO` (originalmente descripto [acá](https://www.esquire.com/news-politics/news/a54440/twitter-ratio-reply/)) toma valores altos es indicador de que la recepción del tuit fue muy mala. 
+
+ $$RATIO = \frac{Respuestas}{Favs + RT} *100$$
+
+Con estas ideas en mente Luciano Galup y J.P. Pilorget replicaron el análisis para el caso argentino y publicaron [_La Grieta Graficada_](https://www.perfil.com/noticias/politica/la-grieta-graficada.phtml). El análisis de los tuits agrupados por espacio político muestra que también en Twitter "aquellos que no forman parte de uno de los dos polos del debate la sufren y encuentran mucho más rechazo en sus publicaciones". 
+
+La forma de graficarlo para visualizarlo es también simple a partir de gráficos ternarios. Estos muestran la relación entre las tres variables (`retweet`, `fav` y `respuesta`), donde los vértices del triángulo representan a cada una de ellas. Cuanto más se acerca un punto (un tweet) a un vértice, mayor es el valor de esa variable respecto de las otras. Por ende, cuanto más se expande la nube de puntos de la pared derecha (segmento que une los `fav` y `rt`) más alto será el valor del `RATIO`. 
+
+![](https://raw.githubusercontent.com/TuQmano/data_TuQmanoR/master/grieta.png){width=100%}
