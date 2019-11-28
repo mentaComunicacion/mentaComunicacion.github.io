@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>mentaComunicación</title>
-    <link>/</link>
-    <description>Recent content on mentaComunicación</description>
+    <title>redes on mentaComunicación</title>
+    <link>/categories/redes/</link>
+    <description>Recent content in redes on mentaComunicación</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 28 Nov 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/redes/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,18 +20,6 @@
       <description>Análisis del equipo de datos de mentaComunicación1
 Twitter es la plataforma preferida para el análisis de datos políticos en redes. Hay por lo menos dos razones que lo explican: (a) es allí donde la mayoría de los dirigentes políticos se expresan (y, por ende, donde el público que consume información política interactúa); y (b) es la red que disponibiliza libremente grandes volumenes de información.
 Trump, el presidente twittero“Donald Trump usa Twitter como ningún otro jefe de estado” -YouGob</description>
-    </item>
-    
-    <item>
-      <title>menta Comunicación</title>
-      <link>/about/</link>
-      <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
-      
-      <guid>/about/</guid>
-      <description>Este blog es un espacio para compartir ideas e investigaciones del equipo de datos de mentaComunicación. Algunos de nuestros desarrollos abiertos al público son:
-  mentaBuzz: Explorador autómatico de noticias en los portales digitales de medios de mayor alcance de Argentina.
-  i.menta: Aplicación interactiva para visualizar el índice menta de características socioeconómicas de Argentina por radio censal.
-  InteligenciaElectoral: Herramienta interactiva para la visualización de resultados de las elecciones presidenciales de Argentina (2015 – 2019)</description>
     </item>
     
   </channel>
