@@ -1,7 +1,7 @@
 ---
 title: Interacciones en Twitter
 author: menta
-date: '2019-11-28'
+date: '2019-11-13'
 slug: interacciones-en-twitter
 categories:
   - redes
