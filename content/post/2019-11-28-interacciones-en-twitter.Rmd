@@ -51,3 +51,208 @@ Con estas ideas en mente Luciano Galup y J.P. Pilorget replicaron el análisis p
 La forma de graficarlo para visualizarlo es también simple a partir de gráficos ternarios. Estos muestran la relación entre las tres variables (`retweet`, `fav` y `respuesta`), donde los vértices del triángulo representan a cada una de ellas. Cuanto más se acerca un punto (un tweet) a un vértice, mayor es el valor de esa variable respecto de las otras. Por ende, cuanto más se expande la nube de puntos de la pared derecha (segmento que une los `fav` y `rt`) más alto será el valor del `RATIO`. 
 
 ![](https://raw.githubusercontent.com/TuQmano/data_TuQmanoR/master/grieta.png){width=100%}
+
+
+
+# Los ratios de la campaña presidencial de Argentina[^3]:
+
+[^3]: Una primera versión de este análisis se presentó durante las *[II Jornadas de Comunicación Estratégica](https://twitter.com/JornadaComUNLZ)* de la Universidad Nacional de Lomas de Zamora.
+
+
+A lo largo de la campaña presidencial empezamos a juntar una gran cantidad de publicaciones de los candidatos en Twitter. Los datos que acá presentamos parecen confirmar la imagen que ya teníamos del ecosistema político argentino en la red del pajarito: los protagonistas principales de cada uno de los dos polos principales tienen valores relativamente bajos del `RATIO`. O, como se argumentaba en *La Grieta Graficada*, "***las audiencias a las que esos tweets interpelan apoyan en gran medida la forma de interpretar el mundo de los contenidos que se publican***". 
+
+
+```{r ratio1_gral, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+
+library(tidyverse)
+library(ggtern)
+library(scales)
+library(lubridate)
+library(stringr)
+library(plotly)
+
+options(scipen=999)
+
+tuits <- read_csv("https://raw.githubusercontent.com/mentaComunicacion/data_posts/master/tweets_post1_interaccion.csv") %>% 
+  mutate(date = as.Date(date))
+
+
+tuits <- tuits %>% 
+  select(date, username, tweet, retweets_count,replies_count,likes_count) %>% 
+  mutate(ratio = round(replies_count/(retweets_count+likes_count)*100, digits=1),
+         label = ratio)
+
+
+
+tuits %>% 
+  filter(date >= "2019-08-12" & date <= "2019-10-28") %>% 
+  ggtern(aes(x = replies_count, y= retweets_count, z = likes_count, colour = username, fill= username))+
+  geom_point(alpha = .7, size= 2.5) +
+  labs(title = 'Ratio de tuits',
+       caption = "Alberto Fernández & Axel Kicillof (Frente de Todos) \n Mauricio Macri & M.E. Vidal (Juntos por el Cambio)",
+       colour = 'Usuario', x = "RP", y = "RT", z = "MG") +
+  scale_color_manual(values = c(kicillofok = "#00aeec", 
+                                alferdez = "#00aeec", 
+                                mariuvidal = "#ffcf02",
+                                mauriciomacri = "#ffcf02")) +
+  scale_fill_manual(values = c(kicillofok = "#00aeec", 
+                               alferdez = "#00aeec", 
+                               mariuvidal = "#ffcf02", 
+                               mauriciomacri = "#ffcf02")) +
+  theme_minimal() +
+  theme(axis.text = element_blank(), 
+        legend.position = 'none', 
+        axis.title = element_text(size = 10),
+        plot.title = element_text(hjust = 0.5))
+
+
+
+```
+
+El gráfico anterior muestra todos los tuits que se publicaron durante la campaña desde las cuentas de los principales candidatos de cada lado de la grieta. La primera foto ya muestra los puntos cercanos a la pared derecha. 
+
+Un ejericio posterior fue dividir estas muestras el día de las P.A.S.O (11 de agosto) para evaluar si los resultados desfavorables de los oficialismos en las elecciones afectaron de alguna manera el comportamiento de los usuarios de twitter con las publicaiones de los candidatos. 
+
+La siguiente tabla resume el valor del `ratio típico` (mediana) para cada tuit/usuario. Un primer elemento a destacar (más allá de que en general los valores son relativamente bajos) es que las cuentas tuvieron un rendimiento similar o mejor que en la primera etapa de la campaña electoral. Incluso, los oficialismos (perderdores de las elecciones) obtuvieron valores más pequeños en el segundo momento. 
+
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+tuits %>%
+  filter(date >= "2019-06-22" & date <= "2019-10-28") %>% 
+  mutate(periodo = if_else(date<="2019-08-11","Campaña P.A.S.O","Campaña Generales")) %>% 
+  mutate(ratio= round(replies_count/(retweets_count+likes_count)*100,digits = 1)) %>% 
+  group_by(username, periodo) %>% 
+  summarise_at(vars(ratio),funs(median(.))) %>% 
+  spread(periodo,ratio) %>% 
+  select(username, `Campaña P.A.S.O`,`Campaña Generales`)   %>% 
+  kableExtra::kable()
+
+```
+
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+
+tuits <- read_csv("https://raw.githubusercontent.com/mentaComunicacion/data_posts/master/tweets_post1_interaccion.csv") %>% 
+  mutate(date = as.Date(date))
+
+
+tuits <- tuits %>% 
+  select(date, username, tweet, retweets_count,replies_count,likes_count) %>% 
+  mutate(ratio = round(replies_count/(retweets_count+likes_count)*100, digits=1),
+         label = ratio)
+
+tuits %>%
+  filter(date >= "2019-06-22" & date <= "2019-10-28") %>% 
+  mutate(periodo = if_else(date<="2019-08-11","Campaña P.A.S.O","Campaña Generales")) %>%
+  mutate(periodo = factor(periodo,levels = c("Campaña P.A.S.O", "Campaña Generales"))) %>% 
+  arrange(desc(periodo)) %>% 
+  ggtern(aes(x = replies_count, y= retweets_count, z = likes_count, colour = username, fill= username)) +
+  geom_point(alpha = .7) +
+  labs(title = 'Reacciones a los tuits según usuario por período',
+       colour = 'Usuario', x = "RP", y = "RT", z = "MG") +
+  scale_color_manual(values = c(kicillofok = "#00aeec",alferdez = "#00aeec", mariuvidal = "#ffcf02", mauriciomacri = "#ffcf02"))+
+  scale_fill_manual(values = c(kicillofok = "#00aeec",alferdez = "#00aeec", mariuvidal = "#ffcf02", mauriciomacri = "#ffcf02")) +
+  facet_grid(periodo ~ username) +
+  theme_minimal() +
+  theme(axis.text = element_blank(), legend.position = 'none', axis.title = element_text(size = 8)) 
+
+
+
+```
+
+
+Por último, podemos analizar el valor de ratio de cada uno de los tuits y su contenido en una serie de tiempo. La línea punteada marca la división temporal entre la campaña de las P.A.S.O. y la elección General. De esta manera podemos explorar el contenido de publicaciones que se alejan sustantivamente de los valores típicos expuestos. Por lo general se trata de publicaciones en las que usuarios identificados con el polo político opuesto responden activamente.  
+
+```{r interactivo_TS, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+tuits <- read_csv("https://raw.githubusercontent.com/mentaComunicacion/data_posts/master/tweets_post1_interaccion.csv") %>% 
+  mutate(date = as.Date(date)) %>% 
+  filter(username %in% c("kicillofok", "mariuvidal"))
+
+
+
+tuits <- tuits %>%
+  filter(date >= "2019-06-22" & date <= "2019-10-28") %>% 
+  mutate(ratio=round(replies_count/(retweets_count+likes_count)*100,digits = 1)) %>%
+  mutate(interacciones=replies_count+retweets_count+likes_count)
+
+date2 <- c(as.Date("2019-08-12"))  #plotly solo reconoce numeric  .. entonces tengo que crear un df para que pueda graficarla
+
+detach("package:ggtern", unload = TRUE)
+
+#unload("ggtern")
+
+tuitsPlotInteractive <- ggplot(tuits,aes(date, ratio, colour = username)) +
+  geom_jitter(aes(text = paste0(
+    "Fecha: ", date, "\r\n",
+    "Ratio: ", ratio, "\r\n",
+    str_wrap(string = paste0("Tuit: ", tweet, "\r\n"), 
+             width = 16,
+             indent = 0,
+             exdent = 0)), 
+    group = username, fill = username, size=interacciones), shape = 21, alpha=0.7) +
+  # scale_size_area(max_size = 10) +
+  geom_smooth(method = lm,se = F, show.legend = F) +
+  geom_vline(aes(xintercept=as.numeric(date2)),linetype=4, colour="red") + 
+  scale_x_date(breaks = "7 days", labels = date_format("%d-%m")) +
+  labs(title = 'Ratio de cada tuit - Axel Kicillof y M. Eugenia Vidal',
+       colour = '', x = "", y = "ratio") +
+  facet_wrap(~username, ncol=1) +
+  scale_color_manual(values  = c("kicillofok"="#00aeec","mariuvidal"="#ffcf02")) +
+  scale_fill_manual(values  = c("kicillofok"="#00aeec","mariuvidal"="#ffcf02")) +
+  theme_minimal() +
+  theme(legend.position = 'none', axis.title = element_text(family = 'AvenirNext LT Pro Regular',size = 8),
+        axis.text.x = element_text(size = 6)) 
+
+ggplotly(tuitsPlotInteractive,tooltip = "text") 
+```
+
+
+
+
+```{r interactivo_Presi, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+tuits <- read_csv("https://raw.githubusercontent.com/mentaComunicacion/data_posts/master/tweets_post1_interaccion.csv") %>% 
+  mutate(date = as.Date(date)) %>% 
+  filter(username %in% c("mauriciomacri", "alferdez"))
+
+
+
+tuits <- tuits %>%
+  filter(date >= "2019-06-22" & date <= "2019-10-28") %>% 
+  mutate(ratio=round(replies_count/(retweets_count+likes_count)*100,digits = 1)) %>%
+  mutate(interacciones=replies_count+retweets_count+likes_count)
+
+date2 <- c(as.Date("2019-08-12"))  #plotly solo reconoce numeric  .. entonces tengo que crear un df para que pueda graficarla
+
+
+tuitsPlotInteractive <- ggplot(tuits,aes(date, ratio, colour = username)) +
+  geom_jitter(aes(text = paste0(
+    "Fecha: ", date, "\r\n",
+    "Ratio: ", ratio, "\r\n",
+    str_wrap(string = paste0("Tuit: ", tweet, "\r\n"), 
+             width = 16,
+             indent = 0,
+             exdent = 0)), 
+    group = username, fill = username, size=interacciones), shape = 21, alpha=0.7) +
+  # scale_size_area(max_size = 10) +
+  geom_smooth(method = lm,se = F, show.legend = F) +
+  geom_vline(aes(xintercept=as.numeric(date2)),linetype=4, colour="red") + 
+  scale_x_date(breaks = "7 days", labels = date_format("%d-%m")) +
+  labs(title = 'Ratio de cada tuit - Alberto Fernández y Mauricio Macri',
+       colour = '', x = "", y = "ratio") +
+  facet_wrap(~username, ncol=1) +
+  scale_color_manual(values  = c("alferdez"="#00aeec","mauriciomacri"="#ffcf02")) +
+  scale_fill_manual(values  = c("alferdez"="#00aeec","mauriciomacri"="#ffcf02")) +
+  theme_minimal() +
+  theme(legend.position = 'none', axis.title = element_text(family = 'AvenirNext LT Pro Regular',size = 8),
+        axis.text.x = element_text(size = 6)) 
+
+ggplotly(tuitsPlotInteractive,tooltip = "text") 
+```
+
+
+
+
+
+
+
