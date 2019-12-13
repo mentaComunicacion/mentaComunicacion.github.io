@@ -6,10 +6,20 @@
     <description>Recent content on mentaComunicación</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 13 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Senado2.0. Una radiografía del ecosistema legislativo en Twitter</title>
+      <link>/2019/12/12/senado2-0/</link>
+      <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/12/12/senado2-0/</guid>
+      <description>(Análisis del equipo de datos de mentaComunicación1)
+Un \(46\%\) de los usuarios de internet activos en Argentina manifestaron utilizar Twitter. Ello ubica a la plataforma en el cuarto lugar entre redes sociales y la sexta posición si se tienen en cuenta los servicios de mensajería. No obstante, esta plataforma es la preferida por la política (que encuentra un espacio para comunicar sin intermediación), por el periodismo (que se sirve de lo que los políticos publican allí como fuente de información) y por analistas (dada la disponibilidad y apertura a grandes volúmenes de información).</description>
+    </item>
     
     <item>
       <title>Interacciones en Twitter</title>
