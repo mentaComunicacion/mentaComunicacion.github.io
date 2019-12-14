@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on mentaComunicación</title>
@@ -17,7 +17,7 @@
       <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>/2019/12/12/senado2-0/</guid>
-      <description>(Análisis del equipo de datos de mentaComunicación1)
+      <description>## Warning: package &amp;#39;knitr&amp;#39; was built under R version 3.5.2 (Análisis del equipo de datos de mentaComunicación1)
 Un \(46\%\) de los usuarios de internet activos en Argentina manifestaron utilizar Twitter. Ello ubica a la plataforma en el cuarto lugar entre redes sociales y la sexta posición si se tienen en cuenta los servicios de mensajería. No obstante, esta plataforma es la preferida por la política (que encuentra un espacio para comunicar sin intermediación), por el periodismo (que se sirve de lo que los políticos publican allí como fuente de información) y por analistas (dada la disponibilidad y apertura a grandes volúmenes de información).</description>
     </item>
     

@@ -13,6 +13,8 @@ tags: []
 library(knitr)
 ```
 
+
+
 (*Análisis del equipo de datos de mentaComunicación*[^1]) 
 
 [^1]: Camila Higa, Franco Galeano, Carolina Rossi y Juan Pablo Ruiz Nicolini.
@@ -27,8 +29,8 @@ include_graphics("https://yiminshum.com/wp-content/uploads/2019/03/Las-plataform
 ```
 
 ---
-
-La conformación de un nuevo cuerpo legislativo para los próximos dos años en Argentina nos motivó a hacer un análisis de la estructura, funcionamiento e interacciones de las cuentas de Twitter de los legisladores nacionales que conformarán el Congreso de la Nación durante el periodo 2019 - 2021. En los siguientes apartados buscamos describir **(i)** cómo se relacionan las cuentas entre sí y **(ii)** cómo se vincula e interactuá el público con las publicaciones. 
+  
+  La conformación de un nuevo cuerpo legislativo para los próximos dos años en Argentina nos motivó a hacer un análisis de la estructura, funcionamiento e interacciones de las cuentas de Twitter de los legisladores nacionales que conformarán el Congreso de la Nación durante el periodo 2019 - 2021. En los siguientes apartados buscamos describir **(i)** cómo se relacionan las cuentas entre sí y **(ii)** cómo se vincula e interactuá el público con las publicaciones. 
 
 # Senado2.0
 
@@ -44,8 +46,8 @@ En el caso del Senado son 9 los legisladores ausentes en la plataforma, 8 de los
 
 
 **Qué sabemos de las $63$ cuentas de senadores que están presentes en Twitter?**
-
-1. Que si agregamos todos sus "amigos" (*follows*) el total asciende a más de $41$ mil cuentas. Pero al contar usuarios únicos el número se reduce a poco más de $26$ mil. 
+  
+  1. Que si agregamos todos sus "amigos" (*follows*) el total asciende a más de $41$ mil cuentas. Pero al contar usuarios únicos el número se reduce a poco más de $26$ mil. 
 
 2. Entonces, el promedio de usuarios seguidos es de unas $413$ cuentas por `@` de senadores. Pero la realidad marca que existen grandes diferencias entre las mismas. Por ejemplo, mientras que la cuenta `reutemannc` sigue a solo $7$ usuarios, `lauramachado` lo hace con más de $3_{mil}$ usuarios. 
 
@@ -109,10 +111,10 @@ include_graphics("https://raw.githubusercontent.com/mentaComunicacion/data_posts
 
 
 ---
-
-## Los del bloque sean unidos...
-
-**¿Cómo se vinculan las cuentas de legisladores según los espacios políticos?** Para dar una respuesta podemos indagar cuáles de las cuentas de legisladores es seguida por sus pares en Twitter. De este modo es posible construir un grafo que nos permita describir la intesidad de los vínculos. Esto es, la relación de amistad entre miembros de las cámaras.
+  
+  ## Los del bloque sean unidos...
+  
+  **¿Cómo se vinculan las cuentas de legisladores según los espacios políticos?** Para dar una respuesta podemos indagar cuáles de las cuentas de legisladores es seguida por sus pares en Twitter. De este modo es posible construir un grafo que nos permita describir la intesidad de los vínculos. Esto es, la relación de amistad entre miembros de las cámaras.
 
 
 
@@ -139,16 +141,16 @@ include_graphics("https://raw.githubusercontent.com/mentaComunicacion/data_posts
 
 
 --- 
-
-## ¿Amigos son los amigos?
-
-
-Más allá del vínculo específico entre miembros del congreso, la información recolectada nos permite avanzar sobre la totalidad de las cuentas. Como veremos a continuación, al analizar el listado de *seguidos/amigos* de cada legislador podemos hechar luz sobre sus posicionamientos políticos por fuera de los límites de la Cámara. Sabemos que la suma de senadores alcanza unas $26_{mil}$ cuentas distintas. Pero, ¿cuáles son más representativas entre los seguidos por senadores? ¿Qué diferencias se pueden encontrar según el alineamiento político?
-
-
-**Cuentas más seguidas** 
-
-El gráfico que sigue muestra las 30 cuentas más seguidas por senadores argentinos. Entre ellas se destacan cuentas insticuionales (`@SenadoArgentina`, `@AgenciaTelam`, `@elparlamentario`), de medios (`@LANACION`, `@infobae`, `@clarincom`, `@AgenciaTelam`, `@todonoticias`, `@LPOArg`), de periodistas (`@Gatosylvestre`, `@luisnovaresio`, `@VHMok`) y dirigentes políticos (`@mauriciomacri`, `@CFKArgentina`, `@SergioMassa`, `@alferdez`), entre otros.
+  
+  ## ¿Amigos son los amigos?
+  
+  
+  Más allá del vínculo específico entre miembros del congreso, la información recolectada nos permite avanzar sobre la totalidad de las cuentas. Como veremos a continuación, al analizar el listado de *seguidos/amigos* de cada legislador podemos hechar luz sobre sus posicionamientos políticos por fuera de los límites de la Cámara. Sabemos que la suma de senadores alcanza unas $26_{mil}$ cuentas distintas. Pero, ¿cuáles son más representativas entre los seguidos por senadores? ¿Qué diferencias se pueden encontrar según el alineamiento político?
+  
+  
+  **Cuentas más seguidas** 
+  
+  El gráfico que sigue muestra las 30 cuentas más seguidas por senadores argentinos. Entre ellas se destacan cuentas insticuionales (`@SenadoArgentina`, `@AgenciaTelam`, `@elparlamentario`), de medios (`@LANACION`, `@infobae`, `@clarincom`, `@AgenciaTelam`, `@todonoticias`, `@LPOArg`), de periodistas (`@Gatosylvestre`, `@luisnovaresio`, `@VHMok`) y dirigentes políticos (`@mauriciomacri`, `@CFKArgentina`, `@SergioMassa`, `@alferdez`), entre otros.
 
 
 ```{r topfollowsSEN, echo=FALSE, fig.align='center', out.width="100%"}
@@ -157,8 +159,8 @@ include_graphics("https://raw.githubusercontent.com/mentaComunicacion/data_posts
 ```
 
 **Diferencia de _seguidos_ por espacio político** 
-
-Existen cuentas como `SenadoArgentina` o `perfilcom` que son seguidas por una cantidad equivalente de legisladores de ambos espacios. En cambio, para otras como `mauriciomacri` y `alferdez` se aprecia un desbalance en función de sus pertenencias políticas.  
+  
+  Existen cuentas como `SenadoArgentina` o `perfilcom` que son seguidas por una cantidad equivalente de legisladores de ambos espacios. En cambio, para otras como `mauriciomacri` y `alferdez` se aprecia un desbalance en función de sus pertenencias políticas.  
 
 Si calculamos la distancia entre espacios para las cuentas con más seguidores, se evidencian estos sesgos partidarios. Hacia la derecha, cuando son mayoritariamente oficialistas. Y, a la inversa, hacia la izquierda cuando son mayoritariamente oposición. Además, aunque la mayoría de los medios de comunicación se encuentran más cercanos a una *zona de empate*, las cuentas `radiomitre` -`todonoticias` y `VHMok` - `C5N` se alinean más a cada uno de los espacios políticos. 
 
@@ -183,48 +185,48 @@ Mientras el eje horizontal representa la cantidad de cuentas del oficialismo que
 
 
 ---
-
-
-Un ejercicio alternativo fue poner el foco en la cuentas más seguidas para cada espacio político. Para ello
+  
+  
+  Un ejercicio alternativo fue poner el foco en la cuentas más seguidas para cada espacio político. Para ello
 restringimos el *ranking* luego de ordenar los datos minimizando la cantidad de seguidores de cada uno de los espacios. Estas cuentas se encuentran más pegadas a los ejes respectivos de cada ecosistema en el gráfico anterior. Las tablas que siguen **rankean** estas cuentas bajo $2$ condiciones ordenando el ranking según prevalencia de seguidores (i) oficialistas y (ii) opositores.
 
 Así, cuando ponemos el foco sobre las **cuentas más seguidas por oficialistas**, observamos entre las 10 principales a cuentas partidarias (`DiputadosFPV_pj`, `UniCiudadanaAr` y `FrenteDeTodos`); de dirigentes afines (`mayrasmendoza`, `CrisAlvarezRod`, `alberto_rsaa`, `chino_navarrook` y `HugoYasky`) y de prensa más cercana a ese espacio político (`robdnavarro` y `pagina12`).
 
 |   + Oficialistas   | <b style="color:red">OPOSICION</b> | <b style="color:blue">OFICIALISMO</b> | <b>TOTAL</b> |
-|:---------------:|:---------:|:-----------:|:-----:|
-| DiputadosFPV_pj |     1     |     19      |  20   |
-|   robdnavarro   |     1     |     18      |  19   |
-|  mayrasmendoza  |     1     |     16      |  17   |
-| chino_navarrook |     1     |     15      |  16   |
-| CrisAlvarezRod  |     1     |     15      |  16   |
-|    pagina12     |     1     |     15      |  16   |
-| UniCiudadanaAR  |     1     |     15      |  16   |
-|  alberto_rsaa   |     1     |     14      |  15   |
-|  FrenteDeTodos  |     1     |     14      |  15   |
-|    HugoYasky    |     1     |     14      |  15   |
-
-
-Lo mismo sucede si ponemos el foco en las **cuentas más seguidas por opositores**, una vez que se minimiza la cantidad de  oficialistas que siguen a esas mismas cuentas. Observamos en los 10 más seguidos a dirigentes radicales (`JCanoOK`, `GerardoMorales`, `JulioMartinezLR` y `Tunessi`) y del PRO (`cabrerarfran`, `JavierJiguacel`, `Klemensiewicz` y `cristianritondo`). Se destacan también la cuenta institucional `UCRNacional` y la del periodista `alfleuco`. 
+  |:---------------:|:---------:|:-----------:|:-----:|
+  | DiputadosFPV_pj |     1     |     19      |  20   |
+  |   robdnavarro   |     1     |     18      |  19   |
+  |  mayrasmendoza  |     1     |     16      |  17   |
+  | chino_navarrook |     1     |     15      |  16   |
+  | CrisAlvarezRod  |     1     |     15      |  16   |
+  |    pagina12     |     1     |     15      |  16   |
+  | UniCiudadanaAR  |     1     |     15      |  16   |
+  |  alberto_rsaa   |     1     |     14      |  15   |
+  |  FrenteDeTodos  |     1     |     14      |  15   |
+  |    HugoYasky    |     1     |     14      |  15   |
+  
+  
+  Lo mismo sucede si ponemos el foco en las **cuentas más seguidas por opositores**, una vez que se minimiza la cantidad de  oficialistas que siguen a esas mismas cuentas. Observamos en los 10 más seguidos a dirigentes radicales (`JCanoOK`, `GerardoMorales`, `JulioMartinezLR` y `Tunessi`) y del PRO (`cabrerarfran`, `JavierJiguacel`, `Klemensiewicz` y `cristianritondo`). Se destacan también la cuenta institucional `UCRNacional` y la del periodista `alfleuco`. 
 
 |   + Opositores   | <b style="color:red">OPOSICION</b> | <b style="color:blue">OFICIALISMO</b> | <b>TOTAL </b>|
-|:---------------:|:---------:|:-----------:|:-----:|
-|     JCanoOK     |    20     |      1      |  21   |
-| GerardoMorales  |    18     |      1      |  19   |
-| JulioMartinezLR |    16     |      1      |  17   |
-|   UCRNacional   |    15     |      1      |  16   |
-|    alfleuco     |    14     |      1      |  15   |
-|   cabrerafran   |    13     |      1      |  14   |
-| JavierJiguacel  |    13     |      1      |  14   |
-|  Klemensiewicz  |    12     |      1      |  13   |
-|     Tunessi     |    12     |      1      |  13   |
-| cristianritondo |    11     |      1      |  12   |
-
-
-
---- 
-
-
->*Los motivos para “seguir” o “ser seguido” por un político son variados, y van desde la afinidad partidaria, cultural o territorial hasta el espionaje, pasando por el consumo irónico. Sin embargo, la intuición sugiere que la afinidad prevalece y la evidencia lo confirma: los políticos siguen a más “amigos” que a rivales. Como la decisión de a quién seguir es pública, con ella envían señales de pertenencia y de reciprocidad tanto a los votantes como a sus potenciales aliados*.  --- [Calvo y Malamud](https://www.elestadista.com.ar/?p=4112)
+  |:---------------:|:---------:|:-----------:|:-----:|
+  |     JCanoOK     |    20     |      1      |  21   |
+  | GerardoMorales  |    18     |      1      |  19   |
+  | JulioMartinezLR |    16     |      1      |  17   |
+  |   UCRNacional   |    15     |      1      |  16   |
+  |    alfleuco     |    14     |      1      |  15   |
+  |   cabrerafran   |    13     |      1      |  14   |
+  | JavierJiguacel  |    13     |      1      |  14   |
+  |  Klemensiewicz  |    12     |      1      |  13   |
+  |     Tunessi     |    12     |      1      |  13   |
+  | cristianritondo |    11     |      1      |  12   |
+  
+  
+  
+  --- 
+  
+  
+  >*Los motivos para “seguir” o “ser seguido” por un político son variados, y van desde la afinidad partidaria, cultural o territorial hasta el espionaje, pasando por el consumo irónico. Sin embargo, la intuición sugiere que la afinidad prevalece y la evidencia lo confirma: los políticos siguen a más “amigos” que a rivales. Como la decisión de a quién seguir es pública, con ella envían señales de pertenencia y de reciprocidad tanto a los votantes como a sus potenciales aliados*.  --- [Calvo y Malamud](https://www.elestadista.com.ar/?p=4112)
 
 
 ## **Amigos son los amigos**
@@ -232,12 +234,12 @@ Lo mismo sucede si ponemos el foco en las **cuentas más seguidas por opositores
 Siguiendo la idea de *Calvo y Malamud* identificamos todas las cuentas seguidas por cada uno de los legisladores. Con esa información construimos una matriz en la que cada fila se corresponde con un legislador y cada columna con cada uno de estos "amigos". Las celdas, en tanto, identifican con un $1$ cuando la cuenta de un legislador sigue a una cuenta y con un $0$ cuando no lo hace. 
 
 El paso siguiente es calcular cómo correlaciona la lista de `seguidos` de cada una de las cuentas de legisladores comparada con sus pares. Visualmente puede analizarse de la siguiente manera: 
-
-#### SENADO 
-
-
-
-```{r corrplot_sen, echo=FALSE, fig.align='center', out.width="100%"}
+  
+  #### SENADO 
+  
+  
+  
+  ```{r corrplot_sen, echo=FALSE, fig.align='center', out.width="100%"}
 include_graphics("https://github.com/mentaComunicacion/data_posts/blob/master/congreso2.0/figs/corrplot_sen.png?raw=true")
 ```
 (*Figura en alta resolución disponible [acá](https://github.com/mentaComunicacion/data_posts/blob/master/congreso2.0/figs/corrplot_sen.png?raw=true)*)
@@ -263,8 +265,8 @@ include_graphics("https://github.com/mentaComunicacion/data_posts/blob/master/co
 ## El público siempre tiene la razón
 
 Un último ejercicio consitió en revisar **cómo interactúa el público** con las publicaciones emitidas desde las cuentas de senadores.  Como ya desarrollamos en una [entrada previa](https://mentacomunicacion.github.io/2019/11/13/interacciones-en-twitter/), les usuaries interactúan con el contenido de tres formas [^2]: 
-
-[^2]: Existe otra acción posible - citar tweet - pero se entiende que esta es una nueva intervención sobre una publicación existente y no simplemente una reacción.
+  
+  [^2]: Existe otra acción posible - citar tweet - pero se entiende que esta es una nueva intervención sobre una publicación existente y no simplemente una reacción.
 
 * `fav` (me gusta - MG): la acción que menos exige / expone al que interactúa. La reacción más común en Twitter. 
 * `retweet` (re publicación - RT): mantiene la economía de esfuerzo del anterior, pero hace más visible la interacción con el resto. 
@@ -272,10 +274,10 @@ Un último ejercicio consitió en revisar **cómo interactúa el público** con 
 
 ***"Si tuviste más respuestas a a un tuit que favs o RT, entonces la cagaste"***. Cuando el `RATIO` (originalmente descripto [acá](https://www.esquire.com/news-politics/news/a54440/twitter-ratio-reply/)) toma valores altos es indicador de que la recepción del tuit fue muy mala. 
 
- $$RATIO = \frac{Respuestas}{Favs + RT} *100$$
-
-
-La forma de graficarlo para visualizarlo es también simple a partir de gráficos ternarios. Estos muestran la relación entre las tres variables (`retweet`, `fav` y `respuesta`), donde los vértices del triángulo representan a cada una de ellas. Cuanto más se acerca un punto (un tweet) a un vértice, mayor es el valor de esa variable respecto de las otras. Por ende, cuanto más se expande la nube de puntos de la pared derecha (segmento que une los `fav` y `rt`) más alto será el valor del `RATIO`. 
+$$RATIO = \frac{Respuestas}{Favs + RT} *100$$
+  
+  
+  La forma de graficarlo para visualizarlo es también simple a partir de gráficos ternarios. Estos muestran la relación entre las tres variables (`retweet`, `fav` y `respuesta`), donde los vértices del triángulo representan a cada una de ellas. Cuanto más se acerca un punto (un tweet) a un vértice, mayor es el valor de esa variable respecto de las otras. Por ende, cuanto más se expande la nube de puntos de la pared derecha (segmento que une los `fav` y `rt`) más alto será el valor del `RATIO`. 
 
 
 

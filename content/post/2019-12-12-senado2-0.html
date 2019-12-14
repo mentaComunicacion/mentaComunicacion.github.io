@@ -49,10 +49,7 @@ tags: []
 <p>Por último, a la cola del <em>ranking</em> se ubican las cuentas de senadores cuyas publicaciones casi no reciben interacciones de parte del público.</p>
 <p><img src="https://raw.githubusercontent.com/mentaComunicacion/data_posts/master/congreso2.0/figs/ratio_rendimiento_bottom10_senadores.png" width="100%" style="display: block; margin: auto;" /></p>
 <hr />
-</div>
-</div>
-<div id="los-del-bloque-sean-unidos" class="section level2">
-<h2>Los del bloque sean unidos…</h2>
+<p>## Los del bloque sean unidos…</p>
 <p><strong>¿Cómo se vinculan las cuentas de legisladores según los espacios políticos?</strong> Para dar una respuesta podemos indagar cuáles de las cuentas de legisladores es seguida por sus pares en Twitter. De este modo es posible construir un grafo que nos permita describir la intesidad de los vínculos. Esto es, la relación de amistad entre miembros de las cámaras.</p>
 <p><img src="https://raw.githubusercontent.com/mentaComunicacion/data_posts/master/congreso2.0/figs/igraph_sen_plot.JPG" width="100%" style="display: block; margin: auto;" /></p>
 <ol style="list-style-type: decimal">
@@ -64,9 +61,7 @@ tags: []
 <p><a href="https://mentacomunicacion.github.io/interactivos/sen_igraph.html">Una versión interactiva</a> nos permite seleccionar a los distintos usuarios (<em>nodos</em>) para visualizar la red que conforman sus relaciones individuales. Tomemos como ejemplo los vínculos que se generan con la cuenta <code>CarlosMenem_LR</code> como <em>nodo</em> de referencia.</p>
 <p><img src="https://raw.githubusercontent.com/mentaComunicacion/data_posts/master/congreso2.0/figs/csm.png" width="100%" style="display: block; margin: auto;" /></p>
 <hr />
-</div>
-<div id="amigos-son-los-amigos" class="section level2">
-<h2>¿Amigos son los amigos?</h2>
+<p>## ¿Amigos son los amigos?</p>
 <p>Más allá del vínculo específico entre miembros del congreso, la información recolectada nos permite avanzar sobre la totalidad de las cuentas. Como veremos a continuación, al analizar el listado de <em>seguidos/amigos</em> de cada legislador podemos hechar luz sobre sus posicionamientos políticos por fuera de los límites de la Cámara. Sabemos que la suma de senadores alcanza unas <span class="math inline">\(26_{mil}\)</span> cuentas distintas. Pero, ¿cuáles son más representativas entre los seguidos por senadores? ¿Qué diferencias se pueden encontrar según el alineamiento político?</p>
 <p><strong>Cuentas más seguidas</strong></p>
 <p>El gráfico que sigue muestra las 30 cuentas más seguidas por senadores argentinos. Entre ellas se destacan cuentas insticuionales (<code>@SenadoArgentina</code>, <code>@AgenciaTelam</code>, <code>@elparlamentario</code>), de medios (<code>@LANACION</code>, <code>@infobae</code>, <code>@clarincom</code>, <code>@AgenciaTelam</code>, <code>@todonoticias</code>, <code>@LPOArg</code>), de periodistas (<code>@Gatosylvestre</code>, <code>@luisnovaresio</code>, <code>@VHMok</code>) y dirigentes políticos (<code>@mauriciomacri</code>, <code>@CFKArgentina</code>, <code>@SergioMassa</code>, <code>@alferdez</code>), entre otros.</p>
@@ -76,6 +71,7 @@ tags: []
 <p>Si calculamos la distancia entre espacios para las cuentas con más seguidores, se evidencian estos sesgos partidarios. Hacia la derecha, cuando son mayoritariamente oficialistas. Y, a la inversa, hacia la izquierda cuando son mayoritariamente oposición. Además, aunque la mayoría de los medios de comunicación se encuentran más cercanos a una <em>zona de empate</em>, las cuentas <code>radiomitre</code> -<code>todonoticias</code> y <code>VHMok</code> - <code>C5N</code> se alinean más a cada uno de los espacios políticos.</p>
 <p><img src="https://github.com/mentaComunicacion/data_posts/blob/master/congreso2.0/figs/rank_dif_sen.png?raw=true" width="100%" style="display: block; margin: auto;" /></p>
 <p>Para profundizar al respecto nos propusimos en primer lugar replicar el análisis de <a href="https://twitter.com/kearneymw/status/1187362531859259392?s=09">Michael Kearney</a> sobre el 116º Congreso de Estados Unidos analizando las cuentas de les Senadores de Argetnina.</p>
+</div>
 <div id="cuentas-de-twitter-seguidas-por-senadores-de-argentina-2019--2021" class="section level4">
 <h4>Cuentas de Twitter seguidas por senadores de Argentina (2019 -2021)</h4>
 <p><img src="https://raw.githubusercontent.com/mentaComunicacion/data_posts/master/congreso2.0/figs/scatter_sen.png" width="100%" style="display: block; margin: auto;" /></p>
@@ -234,12 +230,11 @@ tags: []
 </blockquote>
 </div>
 </div>
-<div id="amigos-son-los-amigos-1" class="section level2">
+<div id="amigos-son-los-amigos" class="section level2">
 <h2><strong>Amigos son los amigos</strong></h2>
 <p>Siguiendo la idea de <em>Calvo y Malamud</em> identificamos todas las cuentas seguidas por cada uno de los legisladores. Con esa información construimos una matriz en la que cada fila se corresponde con un legislador y cada columna con cada uno de estos “amigos”. Las celdas, en tanto, identifican con un <span class="math inline">\(1\)</span> cuando la cuenta de un legislador sigue a una cuenta y con un <span class="math inline">\(0\)</span> cuando no lo hace.</p>
 <p>El paso siguiente es calcular cómo correlaciona la lista de <code>seguidos</code> de cada una de las cuentas de legisladores comparada con sus pares. Visualmente puede analizarse de la siguiente manera:</p>
-<div id="senado" class="section level4">
-<h4>SENADO</h4>
+<p>#### SENADO</p>
 <p><img src="https://github.com/mentaComunicacion/data_posts/blob/master/congreso2.0/figs/corrplot_sen.png?raw=true" width="100%" style="display: block; margin: auto;" /> (<em>Figura en alta resolución disponible <a href="https://github.com/mentaComunicacion/data_posts/blob/master/congreso2.0/figs/corrplot_sen.png?raw=true">acá</a></em>)</p>
 <p>Los ejes listan (agrupadas por espacio político) cada una de las cuentas analizadas para el Senado de la Nación. La diagonal inferior (azul oscuro) muestra la correlación política perfecta (<span class="math inline">\(1\)</span>) dado que las observaciones corresponden a la misma cuenta en filas y columnas. Así, para el resto de las cuentas con las que se compara cada usuario, cuanto más azul, la correlación será más alta (los usuarios que siguen las cuentas son más similares) y cuanto más rojo, los “amigos” de ese par de cuentas difieren más.</p>
 <p>Rápidamente se observa que en líneas generales hay una asociación positiva entre cuentas del Frente de Todos (el oficialismo, en azul) y de la oposición (agrupados con distintos colores por pertenencia de bloque dentro del interbloque Juntos por el Cambio). Por último, al comparar entre cuentas pertenecientes a polos distintos la tendencia es a la inexistencia de relación (más blanco, con valores cercanos a <span class="math inline">\(0\)</span>; o una asocación negativa, con tonos más rojos).</p>
@@ -248,7 +243,6 @@ tags: []
 <p>Una mirada más detallada nos permite encontrar elementos salientes. Por ejemplo, considerando el espacio oficialista, se destacan la lejanía de <code>Oscar_Parrili</code>, <code>JAlperovichOk</code> y <code>Adolfo_RSaa</code> del centro del <strong>Frente de Todos</strong> (ocupado por cuentas como <code>marianorecalde</code> y <code>CasserioCarlos</code>). En tanto, al observar el sub espacio de <strong>Juntos por el Cambio</strong> se observan: una mayor proporción de cuentas de <em>Cambiemos</em> y <em>PRO</em> en la mitad superior; de la <em>UCR</em> en la mitad inferior y cuentas de <em>Otros</em> (<code>ReutemannC</code> y <code>Weretilneck</code>) a un margen (izquierdo) de la <em>nube</em> amarilla.</p>
 <p><img src="https://github.com/mentaComunicacion/data_posts/blob/master/congreso2.0/figs/PCA_sen.png?raw=true" width="100%" style="display: block; margin: auto;" /></p>
 <p>(<em>Figura en alta resolución disponible <a href="https://raw.githubusercontent.com/mentaComunicacion/data_posts/master/congreso2.0/figs/PCA_sen.png">acá</a></em>)</p>
-</div>
 </div>
 <div id="el-publico-siempre-tiene-la-razon" class="section level2">
 <h2>El público siempre tiene la razón</h2>
