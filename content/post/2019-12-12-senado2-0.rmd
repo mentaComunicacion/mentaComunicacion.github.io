@@ -40,7 +40,7 @@ include_graphics("https://github.com/mentaComunicacion/data_posts/blob/master/co
 ```
 
 
-En el caso del Senado, hay 9 los legisladores ausentes en la plataforma, 8 de los cuales pertenecen al oficialismo y 1 a la oposición. Los ausentes de oficialismo son Ledesma Abdala de Zamora, Montenegro y Neder (Santiago del Estero), González y Mayans (Formosa), García Larraburu (R.Negro), Gimenez (Salta) y López (S.Juan);y por la oposición Olalla de Moreira (E.Ríos). 
+En el caso del Senado son 9 los legisladores ausentes en la plataforma, 8 de los cuales pertenecen al oficialismo y 1 a la oposición. Los ausentes del primer grupo son Ledesma Abdala de Zamora, Montenegro y Neder (Santiago del Estero), González y Mayans (Formosa), García Larraburu (R.Negro), Gimenez (Salta) y López (S.Juan);y por la oposición Olalla de Moreira (E.Ríos). 
 
 
 **Qué sabemos de las $63$ cuentas de senadores que están presentes en Twitter?**
@@ -49,7 +49,7 @@ En el caso del Senado, hay 9 los legisladores ausentes en la plataforma, 8 de lo
 
 2. Entonces, el promedio de usuarios seguidos es de unas $413$ cuentas por `@` de senadores. Pero la realidad marca que existen grandes diferencias entre las mismas. Por ejemplo, mientras que la cuenta `reutemannc` sigue a solo $7$ usuarios, `lauramachado` lo hace con más de $3_{mil}$ usuarios. 
 
-3. Por otro lado, podemos analizar las cuentas individualmente evaluando algunas características de su comportamiento: **1.** la frecuencia de publicación, **2.** la cantidad de interacciones promedio que sus publicaciones generan y **3.** su alcance potencial (medido por la cantidad de cuentas que los siguen - _followers_ ). 
+3. Por otro lado, podemos analizar las cuentas individualmente evaluando algunas características de su comportamiento: **1.** la frecuencia de publicación, **2.** la cantidad de interacciones promedio que generan y **3.** su alcance potencial (medido por la cantidad de cuentas que los siguen - _followers_ ). 
 
 
 ### Métricas de funcionamiento de las cuentas: 
@@ -58,7 +58,7 @@ En el caso del Senado, hay 9 los legisladores ausentes en la plataforma, 8 de lo
 
 ####  $1.$ Alcance potencial
 
-Definimos el alcance potencial de cada cuenta en función de la cantidad de seguidores que cada una tiene. El gráfico siguiente muestra las $10/63$ cuentas con mayor cantidad de seguidores. Solo las cuenta de Martín Lousteau (con XXX seguidores) y Esteban Bullrich (con XXXX) superan la barrera de $450_{mil}$ seguidores. Más parejos, cerca de los $150_{mil}$ se ubican los perfiles de Mariano Recalde y Julio Cobos. Dentro del *top10* las cuentas de Fernández Sagasti y Alfredo de Angeli rondan los XXX seguidores. 
+Definimos el alcance potencial de cada cuenta en función de la cantidad de seguidores que cada una tiene. El gráfico siguiente muestra las $10/63$ cuentas con mayor cantidad de seguidores. Solo las cuenta de Martín Lousteau y Esteban Bullrich superan la barrera de $450_{mil}$ seguidores. Más parejos, cerca de los $150_{mil}$ se ubican los perfiles de Mariano Recalde y Julio Cobos. 
 
 ```{r alcance, echo=FALSE, fig.align='center', out.width="100%"}
 include_graphics("https://raw.githubusercontent.com/mentaComunicacion/data_posts/master/congreso2.0/figs/ratio_ff_top10_senadores.png")
@@ -88,9 +88,9 @@ include_graphics("https://raw.githubusercontent.com/mentaComunicacion/data_posts
 
 ####  $3.$ Interacciones
 
-Consideramos para este indicador el promedio de la cantidad de **Me Gusta** y **Retweet** que recibe una publicación determinada, habiendo restringido la muestra de *tuits* a todas las publicaciones de senadores durante el año $2019$. 
+Consideramos para este indicador el promedio de la cantidad de **Me Gusta** y **Retweet** que recibe una publicación determinada, para todas las publicaciones de senadores durante el año $2019$. 
 
-Solo $3$ cuentas superan las $500$ interacciones promedio por publicación: Recalde, Naidenoff y Bullrich. Resulta llamativa la diferencia entre la cuenta de Bullrich respecto de sus colegas. 
+Solo $3$ cuentas superan las $500$ interacciones promedio por publicación: Recalde, Naidenoff y Bullrich. Resulta llamativa la diferencia entre la cuenta del último respecto a sus colegas. 
 
 ```{r rendimiento, echo=FALSE, fig.align='center', out.width="100%"}
 include_graphics("https://raw.githubusercontent.com/mentaComunicacion/data_posts/master/congreso2.0/figs/ratio_rendimiento_top10_senadores.png")

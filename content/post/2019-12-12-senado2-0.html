@@ -10,7 +10,8 @@ tags: []
 
 
 
-<p>(<em>Análisis del equipo de datos de mentaComunicación</em><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>)</p>
+<pre><code>## Warning: package &#39;knitr&#39; was built under R version 3.5.2</code></pre>
+<p>(<em>Análisis del equipo de datos de mentaComunicación</em><a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>)</p>
 <p>Un <span class="math inline">\(46\%\)</span> de los usuarios de internet activos en Argentina manifestaron utilizar Twitter. Ello ubica a la plataforma en el cuarto lugar entre redes sociales y la sexta posición si se tienen en cuenta los servicios de mensajería. No obstante, esta plataforma es la preferida por <em>la política</em> (que encuentra un espacio para comunicar sin intermediación), por el periodismo (que se sirve de lo que los políticos publican allí como fuente de información) y por analistas (dada la disponibilidad y apertura a grandes volúmenes de información).</p>
 <p><img src="https://yiminshum.com/wp-content/uploads/2019/03/Las-plataformas-con-m%C3%A1s-usuarios-activos-en-Argentina-2019-1024x576.jpg" width="100%" style="display: block; margin: auto;" /></p>
 <hr />
@@ -19,21 +20,20 @@ tags: []
 <h1>Senado2.0</h1>
 <p>En esta primera aproximación analizaremos las cuentas de quienes ocuparán bancas en la cámara alta del Congreso. El gráfico que sigue nos permite aproximarnos a la distribución de poder político (diferenciando entre oficialismo y oposición). Asimismo se destaca la proporción de bancas que no tienen cuentas activas en la plataforma.</p>
 <p><img src="https://github.com/mentaComunicacion/data_posts/blob/master/congreso2.0/figs/ggparliament_sen.png?raw=true" width="100%" style="display: block; margin: auto;" /></p>
-<p>En el caso del Senado, hay 9 los legisladores ausentes en la plataforma, 8 de los cuales pertenecen al oficialismo y 1 a la oposición. Los ausentes de oficialismo son Ledesma Abdala de Zamora, Montenegro y Neder (Santiago del Estero), González y Mayans (Formosa), García Larraburu (R.Negro), Gimenez (Salta) y López (S.Juan);y por la oposición Olalla de Moreira (E.Ríos).</p>
+<p>En el caso del Senado son 9 los legisladores ausentes en la plataforma, 8 de los cuales pertenecen al oficialismo y 1 a la oposición. Los ausentes del primer grupo son Ledesma Abdala de Zamora, Montenegro y Neder (Santiago del Estero), González y Mayans (Formosa), García Larraburu (R.Negro), Gimenez (Salta) y López (S.Juan);y por la oposición Olalla de Moreira (E.Ríos).</p>
 <p><strong>Qué sabemos de las <span class="math inline">\(63\)</span> cuentas de senadores que están presentes en Twitter?</strong></p>
 <ol style="list-style-type: decimal">
 <li><p>Que si agregamos todos sus “amigos” (<em>follows</em>) el total asciende a más de <span class="math inline">\(41\)</span> mil cuentas. Pero al contar usuarios únicos el número se reduce a poco más de <span class="math inline">\(26\)</span> mil.</p></li>
 <li><p>Entonces, el promedio de usuarios seguidos es de unas <span class="math inline">\(413\)</span> cuentas por <code>@</code> de senadores. Pero la realidad marca que existen grandes diferencias entre las mismas. Por ejemplo, mientras que la cuenta <code>reutemannc</code> sigue a solo <span class="math inline">\(7\)</span> usuarios, <code>lauramachado</code> lo hace con más de <span class="math inline">\(3_{mil}\)</span> usuarios.</p></li>
-<li><p>Por otro lado, podemos analizar las cuentas individualmente evaluando algunas características de su comportamiento: <strong>1.</strong> la frecuencia de publicación, <strong>2.</strong> la cantidad de interacciones promedio que sus publicaciones generan y <strong>3.</strong> su alcance potencial (medido por la cantidad de cuentas que los siguen - <em>followers</em> ).</p></li>
+<li><p>Por otro lado, podemos analizar las cuentas individualmente evaluando algunas características de su comportamiento: <strong>1.</strong> la frecuencia de publicación, <strong>2.</strong> la cantidad de interacciones promedio que generan y <strong>3.</strong> su alcance potencial (medido por la cantidad de cuentas que los siguen - <em>followers</em> ).</p></li>
 </ol>
-<div id="métricas-de-funcionamiento-de-las-cuentas" class="section level3">
+<div id="metricas-de-funcionamiento-de-las-cuentas" class="section level3">
 <h3>Métricas de funcionamiento de las cuentas:</h3>
 <div id="alcance-potencial" class="section level4">
 <h4><span class="math inline">\(1.\)</span> Alcance potencial</h4>
-<p>Definimos el alcance potencial de cada cuenta en función de la cantidad de seguidores que cada una tiene. El gráfico siguiente muestra las <span class="math inline">\(10/63\)</span> cuentas con mayor cantidad de seguidores. Solo las cuenta de Martín Lousteau (con XXX seguidores) y Esteban Bullrich (con XXXX) superan la barrera de <span class="math inline">\(450_{mil}\)</span> seguidores. Más parejos, cerca de los <span class="math inline">\(150_{mil}\)</span> se ubican los perfiles de Mariano Recalde y Julio Cobos. Dentro del <em>top10</em> las cuentas de Fernández Sagasti y Alfredo de Angeli rondan los XXX seguidores.</p>
+<p>Definimos el alcance potencial de cada cuenta en función de la cantidad de seguidores que cada una tiene. El gráfico siguiente muestra las <span class="math inline">\(10/63\)</span> cuentas con mayor cantidad de seguidores. Solo las cuenta de Martín Lousteau y Esteban Bullrich superan la barrera de <span class="math inline">\(450_{mil}\)</span> seguidores. Más parejos, cerca de los <span class="math inline">\(150_{mil}\)</span> se ubican los perfiles de Mariano Recalde y Julio Cobos.</p>
 <p><img src="https://raw.githubusercontent.com/mentaComunicacion/data_posts/master/congreso2.0/figs/ratio_ff_top10_senadores.png" width="100%" style="display: block; margin: auto;" /></p>
-<p>Pero, además de considerar la cuenta absoluta, también puede evaluarse en relación a la cantidad de cuentas que ellos mismos siguen (construyendo un ratio <span class="math inline">\(seguidores/seguidos\)</span>). En el gráfico esto está representado por el tamaño del círculo: cuanto más grande es, mayor el valor del ratio.
-En la cola del <em>ranking</em> de más seguidos, <span class="math inline">\(8/10\)</span> cuentas no superan la barrera de los <span class="math inline">\(1500\)</span> seguidores.</p>
+<p>Pero, además de considerar la cuenta absoluta, también puede evaluarse en relación a la cantidad de cuentas que ellos mismos siguen (construyendo un ratio <span class="math inline">\(seguidores/seguidos\)</span>). En el gráfico esto está representado por el tamaño del círculo: cuanto más grande es, mayor el valor del ratio. En la cola del <em>ranking</em> de más seguidos, <span class="math inline">\(8/10\)</span> cuentas no superan la barrera de los <span class="math inline">\(1500\)</span> seguidores.</p>
 <p><img src="https://raw.githubusercontent.com/mentaComunicacion/data_posts/master/congreso2.0/figs/ratio_ff_bottom10_senadores.png" width="100%" style="display: block; margin: auto;" /></p>
 </div>
 <div id="frecuencia-de-publicaciones" class="section level4">
@@ -43,8 +43,8 @@ En la cola del <em>ranking</em> de más seguidos, <span class="math inline">\(8/
 </div>
 <div id="interacciones" class="section level4">
 <h4><span class="math inline">\(3.\)</span> Interacciones</h4>
-<p>Consideramos para este indicador el promedio de la cantidad de <strong>Me Gusta</strong> y <strong>Retweet</strong> que recibe una publicación determinada, habiendo restringido la muestra de <em>tuits</em> a todas las publicaciones de senadores durante el año <span class="math inline">\(2019\)</span>.</p>
-<p>Solo <span class="math inline">\(3\)</span> cuentas superan las <span class="math inline">\(500\)</span> interacciones promedio por publicación: Recalde, Naidenoff y Bullrich. Resulta llamativa la diferencia entre la cuenta de Bullrich respecto de sus colegas.</p>
+<p>Consideramos para este indicador el promedio de la cantidad de <strong>Me Gusta</strong> y <strong>Retweet</strong> que recibe una publicación determinada, para todas las publicaciones de senadores durante el año <span class="math inline">\(2019\)</span>.</p>
+<p>Solo <span class="math inline">\(3\)</span> cuentas superan las <span class="math inline">\(500\)</span> interacciones promedio por publicación: Recalde, Naidenoff y Bullrich. Resulta llamativa la diferencia entre la cuenta del último respecto a sus colegas.</p>
 <p><img src="https://raw.githubusercontent.com/mentaComunicacion/data_posts/master/congreso2.0/figs/ratio_rendimiento_top10_senadores.png" width="100%" style="display: block; margin: auto;" /></p>
 <p>Por último, a la cola del <em>ranking</em> se ubican las cuentas de senadores cuyas publicaciones casi no reciben interacciones de parte del público.</p>
 <p><img src="https://raw.githubusercontent.com/mentaComunicacion/data_posts/master/congreso2.0/figs/ratio_rendimiento_bottom10_senadores.png" width="100%" style="display: block; margin: auto;" /></p>
@@ -81,8 +81,7 @@ En la cola del <em>ranking</em> de más seguidos, <span class="math inline">\(8/
 <p><img src="https://raw.githubusercontent.com/mentaComunicacion/data_posts/master/congreso2.0/figs/scatter_sen.png" width="100%" style="display: block; margin: auto;" /></p>
 <p>Mientras el eje horizontal representa la cantidad de cuentas del oficialismo que siguen a cada uno de los más de <span class="math inline">\(26_{mil}\)</span> perfiles de la muestra, el eje vertical lo hace respecto de la oposición. Se destacan los nombres de perfil de todas las cuentas que tienen por lo menos <span class="math inline">\(15\)</span> seguidores de alguno de los espacios políticos. Estos fueron coloreados en <b style="color:red"> rojo (oposición)</b> y <b style="color:blue">azul (oficialismo)</b> según la predominancia de uno respecto del otro y se marcó en verde la <em>zona de empate</em> (cuando la diferencia entre los dos fue menor a <span class="math inline">\(4\)</span>, un <span class="math inline">\(5\%\)</span> de las cuentas de senadores, aproximadamente).</p>
 <hr />
-<p>Un ejercicio alternativo fue poner el foco en la cuentas más seguidas para cada espacio político. Para ello
-restringimos el <em>ranking</em> luego de ordenar los datos minimizando la cantidad de seguidores de cada uno de los espacios. Estas cuentas se encuentran más pegadas a los ejes respectivos de cada ecosistema en el gráfico anterior. Las tablas que siguen <strong>rankean</strong> estas cuentas bajo <span class="math inline">\(2\)</span> condiciones ordenando el ranking según prevalencia de seguidores (i) oficialistas y (ii) opositores.</p>
+<p>Un ejercicio alternativo fue poner el foco en la cuentas más seguidas para cada espacio político. Para ello restringimos el <em>ranking</em> luego de ordenar los datos minimizando la cantidad de seguidores de cada uno de los espacios. Estas cuentas se encuentran más pegadas a los ejes respectivos de cada ecosistema en el gráfico anterior. Las tablas que siguen <strong>rankean</strong> estas cuentas bajo <span class="math inline">\(2\)</span> condiciones ordenando el ranking según prevalencia de seguidores (i) oficialistas y (ii) opositores.</p>
 <p>Así, cuando ponemos el foco sobre las <strong>cuentas más seguidas por oficialistas</strong>, observamos entre las 10 principales a cuentas partidarias (<code>DiputadosFPV_pj</code>, <code>UniCiudadanaAr</code> y <code>FrenteDeTodos</code>); de dirigentes afines (<code>mayrasmendoza</code>, <code>CrisAlvarezRod</code>, <code>alberto_rsaa</code>, <code>chino_navarrook</code> y <code>HugoYasky</code>) y de prensa más cercana a ese espacio político (<code>robdnavarro</code> y <code>pagina12</code>).</p>
 <table>
 <thead>
@@ -241,8 +240,7 @@ restringimos el <em>ranking</em> luego de ordenar los datos minimizando la canti
 <p>El paso siguiente es calcular cómo correlaciona la lista de <code>seguidos</code> de cada una de las cuentas de legisladores comparada con sus pares. Visualmente puede analizarse de la siguiente manera:</p>
 <div id="senado" class="section level4">
 <h4>SENADO</h4>
-<p><img src="https://github.com/mentaComunicacion/data_posts/blob/master/congreso2.0/figs/corrplot_sen.png?raw=true" width="100%" style="display: block; margin: auto;" />
-(<em>Figura en alta resolución disponible <a href="https://github.com/mentaComunicacion/data_posts/blob/master/congreso2.0/figs/corrplot_sen.png?raw=true">acá</a></em>)</p>
+<p><img src="https://github.com/mentaComunicacion/data_posts/blob/master/congreso2.0/figs/corrplot_sen.png?raw=true" width="100%" style="display: block; margin: auto;" /> (<em>Figura en alta resolución disponible <a href="https://github.com/mentaComunicacion/data_posts/blob/master/congreso2.0/figs/corrplot_sen.png?raw=true">acá</a></em>)</p>
 <p>Los ejes listan (agrupadas por espacio político) cada una de las cuentas analizadas para el Senado de la Nación. La diagonal inferior (azul oscuro) muestra la correlación política perfecta (<span class="math inline">\(1\)</span>) dado que las observaciones corresponden a la misma cuenta en filas y columnas. Así, para el resto de las cuentas con las que se compara cada usuario, cuanto más azul, la correlación será más alta (los usuarios que siguen las cuentas son más similares) y cuanto más rojo, los “amigos” de ese par de cuentas difieren más.</p>
 <p>Rápidamente se observa que en líneas generales hay una asociación positiva entre cuentas del Frente de Todos (el oficialismo, en azul) y de la oposición (agrupados con distintos colores por pertenencia de bloque dentro del interbloque Juntos por el Cambio). Por último, al comparar entre cuentas pertenecientes a polos distintos la tendencia es a la inexistencia de relación (más blanco, con valores cercanos a <span class="math inline">\(0\)</span>; o una asocación negativa, con tonos más rojos).</p>
 <p>El siguiente gráfico ubica en un plano a los dos primeros <a href="https://es.wikipedia.org/wiki/An%C3%A1lisis_de_componentes_principales">componentes principales</a> (que explican la mayor variabilidad de los datos de la matriz de usuarios seguidos por senadores). El gráfico ordena los <code>@</code> de cada uno en distintos espacios y destaca la pertenencia política de cada uno.</p>
@@ -252,9 +250,9 @@ restringimos el <em>ranking</em> luego de ordenar los datos minimizando la canti
 <p>(<em>Figura en alta resolución disponible <a href="https://raw.githubusercontent.com/mentaComunicacion/data_posts/master/congreso2.0/figs/PCA_sen.png">acá</a></em>)</p>
 </div>
 </div>
-<div id="el-público-siempre-tiene-la-razón" class="section level2">
+<div id="el-publico-siempre-tiene-la-razon" class="section level2">
 <h2>El público siempre tiene la razón</h2>
-<p>Un último ejercicio consitió en revisar <strong>cómo interactúa el público</strong> con las publicaciones emitidas desde las cuentas de senadores. Como ya desarrollamos en una <a href="https://mentacomunicacion.github.io/2019/11/13/interacciones-en-twitter/">entrada previa</a>, les usuaries interactúan con el contenido de tres formas <a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>:</p>
+<p>Un último ejercicio consitió en revisar <strong>cómo interactúa el público</strong> con las publicaciones emitidas desde las cuentas de senadores. Como ya desarrollamos en una <a href="https://mentacomunicacion.github.io/2019/11/13/interacciones-en-twitter/">entrada previa</a>, les usuaries interactúan con el contenido de tres formas <a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a>:</p>
 <ul>
 <li><code>fav</code> (me gusta - MG): la acción que menos exige / expone al que interactúa. La reacción más común en Twitter.</li>
 <li><code>retweet</code> (re publicación - RT): mantiene la economía de esfuerzo del anterior, pero hace más visible la interacción con el resto.</li>
@@ -270,7 +268,7 @@ restringimos el <em>ranking</em> luego de ordenar los datos minimizando la canti
 <div class="footnotes">
 <hr />
 <ol>
-<li id="fn1"><p>Camila Higa, Franco Galeano, Carolina Rossi y Juan Pablo Ruiz Nicolini.<a href="#fnref1" class="footnote-back">↩</a></p></li>
-<li id="fn2"><p>Existe otra acción posible - citar tweet - pero se entiende que esta es una nueva intervención sobre una publicación existente y no simplemente una reacción.<a href="#fnref2" class="footnote-back">↩</a></p></li>
+<li id="fn1"><p>Camila Higa, Franco Galeano, Carolina Rossi y Juan Pablo Ruiz Nicolini.<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p>Existe otra acción posible - citar tweet - pero se entiende que esta es una nueva intervención sobre una publicación existente y no simplemente una reacción.<a href="#fnref2">↩</a></p></li>
 </ol>
 </div>
