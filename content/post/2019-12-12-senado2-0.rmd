@@ -58,7 +58,6 @@ En el caso del Senado son 9 los legisladores ausentes en la plataforma, 8 de los
 ### Métricas de funcionamiento de las cuentas: 
 
 
-
 ####  $1.$ Alcance potencial
 
 Definimos el alcance potencial de cada cuenta en función de la cantidad de seguidores que cada una tiene. El gráfico siguiente muestra las $10/63$ cuentas con mayor cantidad de seguidores. Solo las cuenta de Martín Lousteau y Esteban Bullrich superan la barrera de $450_{mil}$ seguidores, con $1,1_{millones}$ y $566_{mil}$ seguidores, respectivimante. Más parejos, cerca de los $150_{mil}$ se ubican los perfiles de Mariano Recalde ($206_{mil}$)y Julio Cobos ($196_{mil}$). 
@@ -131,7 +130,7 @@ include_graphics("https://raw.githubusercontent.com/mentaComunicacion/data_posts
 2. Las flechas (*aristas*) marca la dirección de la conexión. Esto es, quién *sigue* a quién.
 3. Los colores son asignados luego de haber agrupado cada una de las cuentas con un método de *clusterización [random walk](https://igraph.org/r/doc/cluster_walktrap.html)*, el cual ordena las cuentas en función de las relaciones entre las mismas definiendo comunidades. 
 
-Previsiblemente se visualiza una mayor intesidad de conexiones (aristas) entre miembros de cada uno de los espacios políticos: mayor cantidad de conexiones azules entre miembros del Frente de Todos y mayor cantidad de conexiones amarillas entre los de Juntos por el Cambio. 
+Previsiblemente se visualiza una mayor intesidad de conexiones (aristas) entre miembros de cada uno de los espacios políticos: mayor cantidad de conexiones azules entre miembros del Frente de Todos y mayor cantidad de conexiones amarillas entre los de la oposición. 
 
 
 [Una versión interactiva ](https://mentacomunicacion.github.io/interactivos/sen_igraph.html) nos permite seleccionar a los distintos usuarios (*nodos*) para visualizar la red que conforman sus relaciones individuales. Tomemos como ejemplo los vínculos que se generan con la cuenta `CarlosMenem_LR`  como _nodo_ de referencia. 
@@ -246,7 +245,7 @@ include_graphics("https://github.com/mentaComunicacion/data_posts/blob/master/co
 
 Los ejes listan cada una de las cuentas analizadas para el Senado de la Nación (agrupadas por espacio político). La diagonal inferior (azul oscuro) muestra una correlación positiva perfecta ($1$), dado que las observaciones corresponden a la misma cuenta en filas y columnas. Así, para el resto de las cuentas con las que se compara cada usuario, cuanto más azul, la correlación será más alta (los usuarios que siguen las cuentas son más similares) y cuanto más rojo, los "amigos" de ese par de cuentas difieren más. 
 
-Rápidamente se observa que en líneas generales hay una asociación positiva entre cuentas del Frente de Todos (el oficialismo, con las etiquetas en azul) y de la oposición (agrupadas con distintos colores por pertenencia de bloque dentro del interbloque Juntos por el Cambio). 
+Rápidamente se observa que en líneas generales hay una asociación positiva entre cuentas del Frente de Todos (el oficialismo, con las etiquetas en azul) y de la oposición (agrupadas con distintos colores por pertenencia de bloque dentro del interbloque Juntos por el Cambio u Otros). 
 
 En la parte superior (correspondiente a los perfiles clasificados como Frente de Todos), sin embagro, se aprecian observaciones con correlación negativa (en rojo) en cuentas como `CarlosMenem_LR` y `juanmariopais`. 
 

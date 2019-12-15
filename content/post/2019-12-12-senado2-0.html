@@ -60,7 +60,7 @@ tags: []
 <li>Las flechas (<em>aristas</em>) marca la dirección de la conexión. Esto es, quién <em>sigue</em> a quién.</li>
 <li>Los colores son asignados luego de haber agrupado cada una de las cuentas con un método de <em>clusterización <a href="https://igraph.org/r/doc/cluster_walktrap.html">random walk</a></em>, el cual ordena las cuentas en función de las relaciones entre las mismas definiendo comunidades.</li>
 </ol>
-<p>Previsiblemente se visualiza una mayor intesidad de conexiones (aristas) entre miembros de cada uno de los espacios políticos: mayor cantidad de conexiones azules entre miembros del Frente de Todos y mayor cantidad de conexiones amarillas entre los de Juntos por el Cambio.</p>
+<p>Previsiblemente se visualiza una mayor intesidad de conexiones (aristas) entre miembros de cada uno de los espacios políticos: mayor cantidad de conexiones azules entre miembros del Frente de Todos y mayor cantidad de conexiones amarillas entre los de la oposición.</p>
 <p><a href="https://mentacomunicacion.github.io/interactivos/sen_igraph.html">Una versión interactiva</a> nos permite seleccionar a los distintos usuarios (<em>nodos</em>) para visualizar la red que conforman sus relaciones individuales. Tomemos como ejemplo los vínculos que se generan con la cuenta <code>CarlosMenem_LR</code> como <em>nodo</em> de referencia.</p>
 <p><img src="https://raw.githubusercontent.com/mentaComunicacion/data_posts/master/congreso2.0/figs/csm.png" width="100%" style="display: block; margin: auto;" /></p>
 <hr />
@@ -242,7 +242,7 @@ tags: []
 <h4>SENADO</h4>
 <p><img src="https://github.com/mentaComunicacion/data_posts/blob/master/congreso2.0/figs/corrplot_sen.png?raw=true" width="100%" style="display: block; margin: auto;" /> (<em>Figura en alta resolución disponible <a href="https://github.com/mentaComunicacion/data_posts/blob/master/congreso2.0/figs/corrplot_sen.png?raw=true">acá</a></em>)</p>
 <p>Los ejes listan cada una de las cuentas analizadas para el Senado de la Nación (agrupadas por espacio político). La diagonal inferior (azul oscuro) muestra una correlación positiva perfecta (<span class="math inline">\(1\)</span>), dado que las observaciones corresponden a la misma cuenta en filas y columnas. Así, para el resto de las cuentas con las que se compara cada usuario, cuanto más azul, la correlación será más alta (los usuarios que siguen las cuentas son más similares) y cuanto más rojo, los “amigos” de ese par de cuentas difieren más.</p>
-<p>Rápidamente se observa que en líneas generales hay una asociación positiva entre cuentas del Frente de Todos (el oficialismo, con las etiquetas en azul) y de la oposición (agrupadas con distintos colores por pertenencia de bloque dentro del interbloque Juntos por el Cambio).</p>
+<p>Rápidamente se observa que en líneas generales hay una asociación positiva entre cuentas del Frente de Todos (el oficialismo, con las etiquetas en azul) y de la oposición (agrupadas con distintos colores por pertenencia de bloque dentro del interbloque Juntos por el Cambio u Otros).</p>
 <p>En la parte superior (correspondiente a los perfiles clasificados como Frente de Todos), sin embagro, se aprecian observaciones con correlación negativa (en rojo) en cuentas como <code>CarlosMenem_LR</code> y <code>juanmariopais</code>.</p>
 <p>Por último, al comparar entre cuentas pertenecientes a polos distintos la tendencia es a la inexistencia de relación (más blanco, con valores cercanos a <span class="math inline">\(0\)</span>; o una asocación negativa, con tonos más rojos).</p>
 <hr />
