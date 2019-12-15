@@ -61,7 +61,7 @@ En el caso del Senado son 9 los legisladores ausentes en la plataforma, 8 de los
 
 ####  $1.$ Alcance potencial
 
-Definimos el alcance potencial de cada cuenta en función de la cantidad de seguidores que cada una tiene. El gráfico siguiente muestra las $10/63$ cuentas con mayor cantidad de seguidores. Solo las cuenta de Martín Lousteau y Esteban Bullrich superan la barrera de $450_{mil}$ seguidores. Más parejos, cerca de los $150_{mil}$ se ubican los perfiles de Mariano Recalde y Julio Cobos. 
+Definimos el alcance potencial de cada cuenta en función de la cantidad de seguidores que cada una tiene. El gráfico siguiente muestra las $10/63$ cuentas con mayor cantidad de seguidores. Solo las cuenta de Martín Lousteau y Esteban Bullrich superan la barrera de $450_{mil}$ seguidores, con $1, millones$ y $566 mil$ seguidores, respectivimante. Más parejos, cerca de los $150_{mil}$ se ubican los perfiles de Mariano Recalde ($206mil $)y Julio Cobos ($196mil$). 
 
 ```{r alcance, echo=FALSE, fig.align='center', out.width="100%"}
 include_graphics("https://raw.githubusercontent.com/mentaComunicacion/data_posts/master/congreso2.0/figs/ratio_ff_top10_senadores.png")
