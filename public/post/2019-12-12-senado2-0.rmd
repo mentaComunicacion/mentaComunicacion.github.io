@@ -50,11 +50,13 @@ En el caso del Senado son 9 los legisladores ausentes en la plataforma, 8 de los
   
   1. Que si agregamos todos sus "amigos" (*follows*) el total asciende a más de $41$ mil cuentas. Pero al contar usuarios únicos el número se reduce a poco más de $26_{mil}$ . 
 
-2. El promedio Entonces, el promedio de usuarios seguidos es de unas $413$ cuentas por `@` de senadores ($663$ es el valor tomando el promedio simple, sin discriminar repeticiones). Pero la realidad marca que existen grandes diferencias entre las mismas. Por ejemplo, mientras que la cuenta `reutemannc` sigue a solo $7$ usuarios, `lauramachado` lo hace con más de $3_{mil}$ usuarios. 
+2. El promedio de usuarios *seguidos* es de unas $413$ cuentas por `@` de senador ($663$ es el valor tomando el promedio simple, sin discriminar repeticiones). Pero la realidad marca que existen grandes diferencias entre las mismas. Por ejemplo, mientras que la cuenta `reutemannc` sigue a solo $7$ usuarios, `lauramachado` lo hace con más de $3_{mil}$ usuarios. 
 
 3. Por otro lado, podemos analizar las cuentas individualmente evaluando algunas características de su comportamiento: **1.** la frecuencia de publicación, **2.** la cantidad de interacciones promedio que generan y **3.** su alcance potencial (medido por la cantidad de cuentas que los siguen - _followers_ ). 
 
-El gráfico que sigue resume estos tres indicadores para las cunetas de seandores relevadas con la excepción de `reutemannc` y `mariabtapia` que no registraron actividad en $2019$. Además de las observaciones de cada cuenta los gráficos de cajas muestran la distribución de los mismos. La línea horizontal, por caso, representa la mediana de cada uno de los indicadores. Estos son los valores que dividen a las muestras en dos mitades: 
+El gráfico que sigue resume estos tres indicadores para las cuentas de seandores relevadas, con la excepción de `reutemannc` y `mariabtapia` que no registraron actividad en $2019$. Además de las observaciones de cada cuenta los gráficos de cajas muestran la distribución de los mismos. La línea horizontal, por caso, representa la mediana de cada uno de los indicadores. 
+
+Estos son los valores que dividen a las muestras en dos mitades: 
 
 * Frecuencia promedio: $0.7$ tuiuts por día
 * Reacciones promedio por publicación $41.2$
@@ -75,14 +77,14 @@ include_graphics("https://raw.githubusercontent.com/mentaComunicacion/data_posts
 
 ####  $1.$ Alcance potencial
 
-Definimos el alcance potencial de cada cuenta en función de la cantidad de seguidores que cada una tiene. El gráfico siguiente muestra las $10/63$ cuentas con mayor cantidad de seguidores. Solo las cuenta de Martín Lousteau y Esteban Bullrich superan la barrera de $450_{mil}$ seguidores, con $1.1_{millones}$ y $566_{mil}$ seguidores, respectivimante. Más parejos, cerca de los $150_{mil}$ se ubican los perfiles de Mariano Recalde ($206_{mil}$) y Julio Cobos ($196_{mil}$). 
+Definimos el alcance potencial de cada cuenta en función de la cantidad de seguidores. El gráfico siguiente muestra las $10/63$ cuentas con mayor cantidad de seguidores. Solo las cuentas de Martín Lousteau y Esteban Bullrich superan la barrera de $450_{mil}$ seguidores, con $1.1_{millones}$ y $566_{mil}$ seguidores, respectivimante. Más parejos se ubican los perfiles de Mariano Recalde ($206_{mil}$) y Julio Cobos ($196_{mil}$). 
 
 ```{r alcance, echo=FALSE, fig.align='center', out.width="100%"}
 include_graphics("https://raw.githubusercontent.com/mentaComunicacion/data_posts/master/congreso2.0/figs/ratio_ff_top10_senadores.png")
 
 ```
 
-Pero, además de considerar la cuenta absoluta, también puede evaluarse en relación a la cantidad de cuentas que ellos mismos siguen (construyendo un ratio $seguidores/seguidos$). En el gráfico esto está representado por el tamaño del círculo: cuanto más grande es, mayor el valor del ratio. 
+Pero, además de considerar la cuenta absoluta, también puede evaluarse en relación a la cantidad de cuentas que ellos mismos siguen (construyendo un ratio $seguidores/seguidos$). En el gráfico esto está representado por el tamaño del círculo: cuanto más grande, mayor el valor del ratio. 
 
 
 En la cola del *ranking*  $8/10$ cuentas no superan la barrera de los $1500$ seguidores. 
@@ -272,7 +274,7 @@ Los ejes listan cada una de las cuentas analizadas para el Senado de la Nación 
 
 Rápidamente se observa que en líneas generales hay una asociación positiva entre cuentas del Frente de Todos (el oficialismo, con las etiquetas en azul) y de la oposición (agrupadas con distintos colores por pertenencia de bloque dentro del interbloque Juntos por el Cambio u Otros). 
 
-En la parte superior (correspondiente a los perfiles clasificados como Frente de Todos), sin embagro, se aprecian observaciones con correlación negativa (en rojo) en cuentas como `CarlosMenem_LR` y `juanmariopais`. 
+Sin embargo, en la parte superior (correspondiente a los perfiles clasificados como Frente de Todos), se aprecian observaciones con correlación negativa (en rojo) en cuentas como `CarlosMenem_LR` y `juanmariopais`. En el extremo opuesto, la cuenta de la misionera `MaggieSolariQ` guarda una relación mucho más positiva comparada con los integrantes del Frente de Todos -al cual no se integró- que con sus pares en la oposición. 
 
 Por último, al comparar entre cuentas pertenecientes a polos distintos la tendencia es a la inexistencia de relación (más blanco, con valores cercanos a $0$; o una asocación negativa, con tonos más rojos). 
 
