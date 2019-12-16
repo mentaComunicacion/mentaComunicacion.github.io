@@ -54,22 +54,24 @@ En el caso del Senado son 9 los legisladores ausentes en la plataforma, 8 de los
 
 3. Por otro lado, podemos analizar las cuentas individualmente evaluando algunas características de su comportamiento: **1.** la frecuencia de publicación, **2.** la cantidad de interacciones promedio que generan y **3.** su alcance potencial (medido por la cantidad de cuentas que los siguen - _followers_ ). 
 
-El gráfico que sigue resume estos tres indicadores para las cuentas de senadores relevadas, con la excepción de `reutemannc` y `mariabtapia` que no registraron actividad en $2019$. Además de las observaciones de cada cuenta los gráficos de cajas muestran la distribución de los mismos. La línea horizontal, por caso, representa la mediana de cada uno de los indicadores. 
-
-Estos son los valores que dividen a las muestras en dos mitades: 
-
-* Frecuencia promedio: $0.7$ tuits por día
-* Reacciones promedio por publicación: $41.2$
-* Seguidores: $6421$ 
-
-Se nominaron, además, las cuentas de los $10$ perfiles de mayor alcance potencial ($+$ seguidores), para todos los indicadores. 
-
+El gráfico que sigue resume estos tres indicadores para las cuentas de senadores relevadas, con la excepción de `reutemannc` y `mariabtapia` que no registraron actividad en $2019$. 
 
 
 ```{r boxplot, echo=FALSE, fig.align='center', out.width="100%"}
 include_graphics("https://raw.githubusercontent.com/mentaComunicacion/data_posts/master/congreso2.0/figs/boxplots.png")
 
 ```
+
+
+Además de las observaciones de cada cuenta los gráficos de cajas muestran la distribución de los mismos. La línea horizontal, por caso, representa la mediana de cada uno de los indicadores. 
+
+Estos son los valores que dividen a las muestras en dos mitades: 
+
+* **Frecuencia promedio**: $0.7$ tuits por día
+* **Reacciones promedio por publicación**: $41.2$
+* **Seguidores**: $6421$ 
+
+Se nominaron, además, las cuentas de los $10$ perfiles de mayor alcance potencial ($+$ seguidores), para todos los indicadores. 
 
 
 ### Métricas de funcionamiento de las cuentas: 
