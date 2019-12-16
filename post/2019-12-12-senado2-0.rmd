@@ -284,7 +284,7 @@ Por último, al comparar entre cuentas pertenecientes a polos distintos la tende
 
 El siguiente gráfico ubica en un plano a los dos primeros [componentes principales](https://es.wikipedia.org/wiki/An%C3%A1lisis_de_componentes_principales) (que explican la mayor variabilidad de los datos de la matriz de usuarios seguidos por senadores)[^2]. El gráfico ordena los `@` en distintos espacios y destaca la pertenencia política de cada uno.
 
-[^2]: *Técnica utilizada para describir un conjunto de datos en términos de nuevas variables ("componentes") no correlacionadas. Los componentes se ordenan por la cantidad de varianza original que describen, por lo que la técnica es útil para reducir la dimensionalidad de un conjunto de datos* - **Wikipedia**.  
+[^2]: Técnica estadística que consiste en obtener la mayor cantidad de información posible de un conjunto de datos construyendo variables latentes a partir de las variables existentes en la que se observan correlaciones y reducir la dimensionalidad del fenómeno. Las componentes son combinaciones lineales de las variables originales y se espera que solo unas pocas recojan la mayor parte de la variabilidad de los datos.  
 
 La parte superior agrupa la mayoría de las cuentas del nuevo oficialismo bajo la etiqueta **Frente de Todos**. En la parte inferior, en tanto, se agrupan los usuarios identificados bajo el espacio **Juntos por el Cambio**, en el cual se destacan también las distintas pertenencias políticas originales (UCR, PRO, CC y Otros). 
 
