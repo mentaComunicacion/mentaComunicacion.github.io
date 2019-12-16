@@ -16,9 +16,9 @@ library(knitr)
 
 
 
-(*Análisis del equipo de datos de <b style="color:#179E8D">menta Comunicación</b>*[^1]) 
+(***Análisis del equipo de datos de <b style="color:#179E8D">menta Comunicación</b>***[^1]) 
 
-[^1]: Camila Higa, Franco Galeano, Carolina Rossi y Juan Pablo Ruiz Nicolini.
+[^1]: [Camila Higa](https://twitter.com/chig4_), [Franco Galeano](https://twitter.com/Tartagalensis), [Carolina Rossi](https://twitter.com/caroYRossi) y [Juan Pablo Ruiz Nicolini](https://twitter.com/tuqmano).
 
 
 Un $46\%$ de los usuarios de internet activos en Argentina manifestaron utilizar Twitter. Ello ubica a la plataforma en el cuarto lugar entre redes sociales y la sexta posición si se tienen en cuenta los servicios de mensajería. No obstante, esta plataforma es la preferida por *la política* (que encuentra un espacio para comunicar sin intermediación), por el periodismo (que se sirve de lo que los políticos publican allí como fuente de información) y por analistas (dada la disponibilidad y apertura a grandes volúmenes de información). 
@@ -54,12 +54,12 @@ En el caso del Senado son 9 los legisladores ausentes en la plataforma, 8 de los
 
 3. Por otro lado, podemos analizar las cuentas individualmente evaluando algunas características de su comportamiento: **1.** la frecuencia de publicación, **2.** la cantidad de interacciones promedio que generan y **3.** su alcance potencial (medido por la cantidad de cuentas que los siguen - _followers_ ). 
 
-El gráfico que sigue resume estos tres indicadores para las cuentas de seandores relevadas, con la excepción de `reutemannc` y `mariabtapia` que no registraron actividad en $2019$. Además de las observaciones de cada cuenta los gráficos de cajas muestran la distribución de los mismos. La línea horizontal, por caso, representa la mediana de cada uno de los indicadores. 
+El gráfico que sigue resume estos tres indicadores para las cuentas de senadores relevadas, con la excepción de `reutemannc` y `mariabtapia` que no registraron actividad en $2019$. Además de las observaciones de cada cuenta los gráficos de cajas muestran la distribución de los mismos. La línea horizontal, por caso, representa la mediana de cada uno de los indicadores. 
 
 Estos son los valores que dividen a las muestras en dos mitades: 
 
-* Frecuencia promedio: $0.7$ tuiuts por día
-* Reacciones promedio por publicación $41.2$
+* Frecuencia promedio: $0.7$ tuits por día
+* Reacciones promedio por publicación: $41.2$
 * Seguidores: $6421$ 
 
 Se nominaron, además, las cuentas de los $10$ perfiles de mayor alcance potencial ($+$ seguidores), para todos los indicadores. 
@@ -77,7 +77,7 @@ include_graphics("https://raw.githubusercontent.com/mentaComunicacion/data_posts
 
 ####  $1.$ Alcance potencial
 
-Definimos el alcance potencial de cada cuenta en función de la cantidad de seguidores. El gráfico siguiente muestra las $10/63$ cuentas con mayor cantidad de seguidores. Solo las cuentas de Martín Lousteau y Esteban Bullrich superan la barrera de $450_{mil}$ seguidores, con $1.1_{millones}$ y $566_{mil}$ seguidores, respectivimante. Más parejos se ubican los perfiles de Mariano Recalde ($206_{mil}$) y Julio Cobos ($196_{mil}$). 
+Definimos el alcance potencial de cada cuenta en función de la cantidad de seguidores. El gráfico siguiente muestra las primeras $10/63$. Solo las cuentas de Martín Lousteau y Esteban Bullrich superan la barrera de $450_{mil}$, con $1.1_{millones}$ y $566_{mil}$ seguidores, respectivamante. Más parejos se ubican los perfiles de Mariano Recalde ($206_{mil}$) y Julio Cobos ($196_{mil}$). 
 
 ```{r alcance, echo=FALSE, fig.align='center', out.width="100%"}
 include_graphics("https://raw.githubusercontent.com/mentaComunicacion/data_posts/master/congreso2.0/figs/ratio_ff_top10_senadores.png")
@@ -98,7 +98,7 @@ include_graphics("https://raw.githubusercontent.com/mentaComunicacion/data_posts
 
 ####   $2.$ Frecuencia de publicaciones
 
-Otro comportamiento que podemos medir se focaliza en el nivel de actividad. Es decir, en la frecuencia con la que las cuentas de los senadores publican contenido orgánico. La primera conclusión es que los miembros de la cámara alta son relativamente moderados: solo $6$ de las $63$ cuentas relevadas superan las $3$ publicaciones diarias en promedio, tal como muestra el *ranking* de las $10$ cuentas que publcian con mayor periodicidad. 
+Otro comportamiento que podemos medir se focaliza en el nivel de actividad. Es decir, en la frecuencia con la que las cuentas de los senadores publican contenido orgánico. La primera conclusión es que los miembros de la cámara alta son relativamente moderados: solo $6$ de las $63$ cuentas relevadas superan las $3$ publicaciones diarias en promedio, tal como muestra el *ranking* de las $10$ cuentas que publican con mayor periodicidad. 
 
 
 ```{r activos, echo=FALSE, fig.align='center', out.width="100%"}
@@ -133,7 +133,7 @@ include_graphics("https://raw.githubusercontent.com/mentaComunicacion/data_posts
   
 ## Los del bloque sean unidos...
   
-  **¿Cómo se vinculan las cuentas de legisladores según los espacios políticos?** Para dar una respuesta podemos indagar cuáles de las cuentas de legisladores es seguida por sus pares en Twitter. De este modo es posible construir un grafo que nos permita describir la intesidad de los vínculos. Esto es, la relación de amistad entre miembros de las cámaras.
+  **¿Cómo se vinculan las cuentas de legisladores según los espacios políticos?** Para dar una respuesta podemos indagar cuáles de las cuentas de legisladores es seguida por sus pares en Twitter. De este modo es posible construir un grafo que nos permita describir la intensidad de los vínculos. Esto es, la relación de amistad entre miembros de las cámaras.
 
 
 
@@ -143,11 +143,11 @@ include_graphics("https://raw.githubusercontent.com/mentaComunicacion/data_posts
 
 ```
 
-1. Cada círculo correspode a una cuenta de una senadora o senador (*nodo*).
-2. Las flechas (*aristas*) marca la dirección de la conexión. Esto es, quién *sigue* a quién.
+1. Cada círculo corresponde a una cuenta de una senadora o senador (*nodo*).
+2. Las flechas (*aristas*) marcan la dirección de la conexión. Esto es, quién *sigue* a quién.
 3. Los colores son asignados luego de haber agrupado cada una de las cuentas con un método de *clusterización [random walk](https://igraph.org/r/doc/cluster_walktrap.html)*, el cual ordena las cuentas en función de las relaciones entre las mismas definiendo comunidades. 
 
-Previsiblemente se visualiza una mayor intesidad de conexiones entre miembros de cada uno de los espacios políticos: mayor cantidad de conexiones azules entre miembros del Frente de Todos y mayor cantidad de conexiones amarillas entre los de la oposición. 
+Previsiblemente se visualiza una mayor intensidad de conexiones entre miembros de cada uno de los espacios políticos: mayor cantidad de conexiones azules entre miembros del Frente de Todos y mayor cantidad de conexiones amarillas entre los de la oposición. 
 
 
 [Una versión interactiva ](https://mentacomunicacion.github.io/interactivos/sen_igraph.html) nos permite seleccionar a los distintos usuarios para visualizar la red que conforman sus relaciones individuales. Tomemos como ejemplo los vínculos que se generan con la cuenta `CarlosMenem_LR`  como _nodo_ de referencia. 
@@ -160,8 +160,8 @@ include_graphics("https://raw.githubusercontent.com/mentaComunicacion/data_posts
 * El único senador que *no sigue* ni es *seguido* por ningún otro es `blancopabloda`
 * $56$ de los $63$ senadores siguen a al menos uno de sus compañeros. 
 * Con $58$ colegas *seguidos*, `PameVerasay` lidera el ranking de los que más *siguen.* `adolfo_rsaa` y `mirabellarob` son los que se encuentran en la cola ($1$ *seguido*)
-* `pameverasay` en la cuenta que más sigue a senadores de la oposición ($30$), seguida por `laurmachado` ($14$)
-* La cuenta con más seguida por sus pares es `estabanbullrich` ($28$) y la menos seguida es `vzimmermannok` ($1$)
+* `pameverasay` es la cuenta que más sigue a senadores de la oposición ($30$), seguida por `laurmachado` ($14$)
+* La cuenta más seguida por sus pares es `estabanbullrich` ($28$) y la menos seguida es `vzimmermannok` ($1$)
 * Las cuentas más seguidas por senadores del espacio opositor son `estebanbullrich` y `gugalusto`
 
 
@@ -179,7 +179,7 @@ include_graphics("https://raw.githubusercontent.com/mentaComunicacion/data_posts
   
   **Cuentas más seguidas** 
   
-  El gráfico que sigue muestra las 30 cuentas más seguidas por senadores argentinos. Entre ellas se destacan cuentas insticuionales (`@SenadoArgentina`, `@AgenciaTelam`, `@elparlamentario`); de medios (`@LANACION`, `@infobae`, `@clarincom`, `@AgenciaTelam`, `@todonoticias`, `@LPOArg`); de periodistas (`@Gatosylvestre`, `@luisnovaresio`, `@VHMok`) y de dirigentes políticos (`@mauriciomacri`, `@CFKArgentina`, `@SergioMassa`, `@alferdez`), entre otros.
+  El gráfico que sigue muestra las 30 cuentas más seguidas por senadores argentinos. Entre ellas se destacan cuentas institucionales (`@SenadoArgentina`, `@AgenciaTelam`, `@elparlamentario`); de medios (`@LANACION`, `@infobae`, `@clarincom`, `@AgenciaTelam`, `@todonoticias`, `@LPOArg`); de periodistas (`@Gatosylvestre`, `@luisnovaresio`, `@VHMok`) y de dirigentes políticos (`@mauriciomacri`, `@CFKArgentina`, `@SergioMassa`, `@alferdez`), entre otros.
 
 
 ```{r topfollowsSEN, echo=FALSE, fig.align='center', out.width="100%"}
@@ -191,7 +191,7 @@ include_graphics("https://raw.githubusercontent.com/mentaComunicacion/data_posts
   
   Existen cuentas como `SenadoArgentina` o `perfilcom` que son seguidas por una cantidad equivalente de legisladores de ambos espacios. En cambio, para otras como `mauriciomacri` y `alferdez` se observa un sesgo en función de sus pertenencias políticas.  
 
-Si calculamos la distancia entre espacios para las cuentas con más seguidores, se evidencian estos diferencias partidarias. Hacia la derecha, cuando son mayoritariamente oficialistas. Y, a la inversa, hacia la izquierda cuando son mayoritariamente oposición. Además, aunque la mayoría de los medios de comunicación se encuentran más cercanos a una *zona de empate*, las cuentas `radiomitre` -`todonoticias` y `VHMok` - `C5N` se alinean más a cada uno de los espacios políticos. 
+Si calculamos la distancia entre espacios para las cuentas con más seguidores, se evidencian estas diferencias partidarias. Hacia la derecha, cuando son mayoritariamente oficialistas. Y, a la inversa, hacia la izquierda cuando son mayoritariamente oposición. Además, aunque la mayoría de los medios de comunicación se encuentran más cercanos a una *zona de empate*, las cuentas `radiomitre` -`todonoticias` y `VHMok` - `C5N` se alinean más a cada uno de los espacios políticos. 
 
 ```{r rank_dif_sen, echo=FALSE, fig.align='center', out.width="100%"}
 include_graphics("https://github.com/mentaComunicacion/data_posts/blob/master/congreso2.0/figs/rank_dif_sen.png?raw=true")
@@ -276,11 +276,11 @@ Rápidamente se observa que en líneas generales hay una asociación positiva en
 
 Sin embargo, en la parte superior (correspondiente a los perfiles clasificados como Frente de Todos), se aprecian observaciones con correlación negativa (en rojo) en cuentas como `CarlosMenem_LR` y `juanmariopais`. En el extremo opuesto, la cuenta de la misionera `MaggieSolariQ` guarda una relación mucho más positiva comparada con los integrantes del Frente de Todos -al cual no se integró- que con sus pares en la oposición. 
 
-Por último, al comparar entre cuentas pertenecientes a polos distintos la tendencia es a la inexistencia de relación (más blanco, con valores cercanos a $0$; o una asocación negativa, con tonos más rojos). 
+Por último, al comparar entre cuentas pertenecientes a polos distintos la tendencia es a la inexistencia de relación (más blanco, con valores cercanos a $0$; o una asociación negativa, con tonos más rojos). 
 
 ---
 
-El siguiente gráfico ubica en un plano a los dos primeros [componentes principales](https://es.wikipedia.org/wiki/An%C3%A1lisis_de_componentes_principales) (que explican la mayor variabilidad de los datos de la matriz de usuarios seguidos por senadores)[^2]. El gráfico ordena los `@` de cada uno en distintos espacios y destaca la pertenencia política de cada uno.
+El siguiente gráfico ubica en un plano a los dos primeros [componentes principales](https://es.wikipedia.org/wiki/An%C3%A1lisis_de_componentes_principales) (que explican la mayor variabilidad de los datos de la matriz de usuarios seguidos por senadores)[^2]. El gráfico ordena los `@` en distintos espacios y destaca la pertenencia política de cada uno.
 
 [^2]: *Técnica utilizada para describir un conjunto de datos en términos de nuevas variables ("componentes") no correlacionadas. Los componentes se ordenan por la cantidad de varianza original que describen, por lo que la técnica es útil para reducir la dimensionalidad de un conjunto de datos* - **Wikipedia**.  
 
@@ -299,7 +299,7 @@ Una mirada más detallada nos permite encontrar elementos salientes. Por ejemplo
 
 ## El público siempre tiene la razón
 
-Un último ejercicio consitió en revisar **cómo interactúa el público** con las publicaciones emitidas desde las cuentas de senadores.  Como ya desarrollamos en una [entrada previa](https://mentacomunicacion.github.io/2019/11/13/interacciones-en-twitter/), les usuaries interactúan con el contenido de tres formas[^3]: 
+Un último ejercicio consistió en revisar **cómo interactúa el público** con las publicaciones emitidas desde las cuentas de senadores.  Como ya desarrollamos en una [entrada previa](https://mentacomunicacion.github.io/2019/11/13/interacciones-en-twitter/), les usuaries interactúan con el contenido de tres formas[^3]: 
   
 [^3]: Existe otra acción posible - citar tweet - pero se entiende que esta es una nueva intervención sobre una publicación existente y no simplemente una reacción.
 
@@ -307,7 +307,7 @@ Un último ejercicio consitió en revisar **cómo interactúa el público** con 
 * `retweet` (re publicación - RT): mantiene la economía de esfuerzo del anterior, pero hace más visible la interacción con el resto. 
 * `reply` (respuesta - RP): el tipo de reacción que implica mayor esfuerzo al tener que elaborar una respuesta. 
 
-***"Si tuviste más respuestas a a un tuit que favs o RT, entonces la cagaste"***. Cuando el `RATIO` (originalmente descripto [acá](https://www.esquire.com/news-politics/news/a54440/twitter-ratio-reply/)) toma valores altos es indicador de que la recepción del tuit fue muy mala. 
+***"Si tuviste más respuestas a un tuit que favs o RT, entonces la cagaste"***. Cuando el `RATIO` (originalmente descripto [acá](https://www.esquire.com/news-politics/news/a54440/twitter-ratio-reply/)) toma valores altos es indicador de que la recepción del tuit fue muy mala. 
 
 $$RATIO = \frac{Respuestas}{Favs + RT} *100$$
   
