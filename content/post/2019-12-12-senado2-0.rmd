@@ -16,7 +16,7 @@ library(knitr)
 
 
 
-(*Análisis del equipo de datos de mentaComunicación*[^1]) 
+(*Análisis del equipo de datos de <b style="color:#179E8D">menta Comunicación</b>*[^1]) 
 
 [^1]: Camila Higa, Franco Galeano, Carolina Rossi y Juan Pablo Ruiz Nicolini.
 
