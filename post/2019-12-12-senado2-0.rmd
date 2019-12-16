@@ -31,7 +31,7 @@ include_graphics("https://yiminshum.com/wp-content/uploads/2019/03/Las-plataform
 
 ---
   
-  La conformación de un nuevo cuerpo legislativo para los próximos dos años en Argentina nos motivó a hacer un análisis de la estructura, funcionamiento e interacciones de las cuentas de Twitter de los legisladores nacionales que conformarán el Congreso de la Nación durante el periodo 2019 - 2021. En los siguientes apartados buscamos describir **(i)** cómo se relacionan las cuentas entre sí y **(ii)** cómo se vincula e interactuá el público con las publicaciones. 
+  La conformación de un nuevo cuerpo legislativo para los próximos dos años en Argentina nos motivó a hacer un análisis de la estructura, funcionamiento e interacciones de las cuentas de Twitter de los legisladores nacionales que conformarán el Congreso de la Nación durante el periodo 2019 - 2021. En los siguientes apartados buscamos describir **(i)** cómo se relacionan las cuentas entre sí y **(ii)** cómo se vincula e interactúa el público con las publicaciones. 
 
 # Senado2.0
 
@@ -199,7 +199,7 @@ include_graphics("https://github.com/mentaComunicacion/data_posts/blob/master/co
 ```
 
 
-Para profundizar al respecto nos propusimos en primer lugar replicar el análisis de [Michael Kearney]( https://twitter.com/kearneymw/status/1187362531859259392?s=09) sobre el 116º Congreso de Estados Unidos analizando las cuentas de les Senadores de Argetnina. 
+Para profundizar al respecto nos propusimos en primer lugar replicar el análisis de [Michael Kearney]( https://twitter.com/kearneymw/status/1187362531859259392?s=09) sobre el 116º Congreso de Estados Unidos analizando las cuentas de les Senadores de Argentina. 
 
 
 #### Cuentas de Twitter seguidas por senadores de Argentina (2019 -2021)
