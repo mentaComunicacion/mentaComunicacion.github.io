@@ -23,7 +23,7 @@ library(knitr)
 
 La conformación de un nuevo cuerpo legislativo para los próximos dos años en Argentina nos motivó a hacer un análisis de la estructura, funcionamiento e interacciones de las cuentas de Twitter de los legisladores nacionales que conformarán el Congreso de la Nación durante el periodo 2019 - 2021. 
 
-Tal como hicieramos respecto a las cuentas de legisladores pertenecientes al Senado de la Nación ([disponible acá](https://mentacomunicacion.github.io/2019/12/12/senado2-0/)), en los siguientes apartados nos proponemos hacer una *radiografía* de la Cámara de Diputados. 
+Tal como hiciéramos respecto a las cuentas de legisladores pertenecientes al Senado de la Nación ([disponible acá](https://mentacomunicacion.github.io/2019/12/12/senado2-0/)), en los siguientes apartados nos proponemos hacer una *radiografía* de la Cámara de Diputados. 
 
 # Diputados2.0
 
@@ -53,7 +53,7 @@ include_graphics("https://raw.githubusercontent.com/mentaComunicacion/data_posts
 ```
 
 
-Además de las observaciones inidviduales los gráficos de cajas muestran la distribución. La línea horizontal representa la mediana de cada uno de los indicadores. 
+Además de las observaciones individuales los gráficos de cajas muestran la distribución. La línea horizontal representa la mediana de cada uno de los indicadores. 
 
 Estos son los valores que dividen a las muestras en dos mitades: 
 
@@ -263,7 +263,7 @@ La parte superior agrupa la mayoría de las cuentas del nuevo oficialismo bajo l
 include_graphics("https://github.com/mentaComunicacion/data_posts/blob/master/congreso2.0/figs/PCA_dip.png?raw=true")
 ```
 
-(*Figura en alta resolución disponible [acá](https://raw.githubusercontent.com/mentaComunicacion/data_posts/master/congreso2.0/figs/PCA_dip.png)*)
+(*Figura en alta resolución disponible [acá](https://raw.githubusercontent.com/mentaComunicacion/data_posts/master/congreso2.0/figs/PCA_dipNom.png)*)
 
 
 Una mirada más detallada nos permite encontrar elementos salientes. Por ejemplo, considerando el espacio oficialista, se destacan la lejanía de `gallegopm`, `cbritezmisiones` y `juanmosqueda_ar` del centro del **Frente de Todos** (ocupado por cuentas como `pablocarrook` y `marabrawer`). 
@@ -275,7 +275,7 @@ include_graphics("https://github.com/mentaComunicacion/data_posts/blob/master/co
 ```
 
 
-En tanto, al observar el sub espacio de **Juntos por el Cambio** se observa una distribución bastante centrada de la nube amarilla con mimebros de las distintas fuerzas que lo componen (PRO, CC y UCR) con algunas cuentas más alejadas como `lucilalehmann`, `sebasnsalvador`, `alvarodlamadrid` y `dinarezi`. 
+En tanto, al observar el sub espacio de **Juntos por el Cambio** se observa una distribución bastante centrada de la nube amarilla con miembros de las distintas fuerzas que lo componen (PRO, CC y UCR) con algunas cuentas más alejadas como `lucilalehmann`, `sebasnsalvador`, `alvarodlamadrid` y `dinarezi`. 
 
 
 
@@ -286,7 +286,7 @@ include_graphics("https://github.com/mentaComunicacion/data_posts/blob/master/co
 
 
 
-La mayor parte de las cuentas identificadas como *Otros* se ubican en una posición intermedia donde se cruzan las nubes de los dos espacios principales. Allí se observa por ejemplo a `rominadelpla` y `nicolasdelcano` del Frente de Izquierda y a mimebros de bloques menores como `paulocassinerio`, `almasapag` y `joseluisramon` (más aislado del resto de sus colegas).
+La mayor parte de las cuentas identificadas como *Otros* se ubican en una posición intermedia donde se cruzan las nubes de los dos espacios principales. Allí se observa por ejemplo a `rominadelpla` y `nicolasdelcano` del Frente de Izquierda y a miembros de bloques menores como `paulocassinerio`, `almasapag` y `joseluisramon` (más aislado del resto de sus colegas).
 
 
 
