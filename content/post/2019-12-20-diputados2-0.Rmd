@@ -76,7 +76,7 @@ include_graphics("https://raw.githubusercontent.com/mentaComunicacion/data_posts
 
 ```
 
-Pero, además de considerar la cuenta absoluta, también puede evaluarse en relación a la cantidad de cuentas que ellos mismos siguen (construyendo un ratio $seguidores/seguidos$). En el gráfico esto está representado por el tamaño del círculo: cuanto más grande, mayor el valor del ratio. Así, por ejemplo, la cuenta de Leopoldo Moreau tiene el ratio más bajo ($130_{mil} / 1840 = 70.9$), por lo que el punto es casi indistingible del segmento. Si lo comparamos, por ejemplo, con la cuenta de Daniel Filmus los valores serían los siguientes: $$348.6_{mil} / 598 = 560.6$$ 
+Pero, además de considerar la cuenta absoluta, también puede evaluarse en relación a la cantidad de cuentas que ellos mismos siguen (construyendo un ratio $seguidores/seguidos$). En el gráfico esto está representado por el tamaño del círculo: cuanto más grande, mayor el valor del ratio. Así, por ejemplo, la cuenta de Leopoldo Moreau tiene el ratio más bajo ($130_{mil} / 1840 = 70.9$), por lo que el punto es casi indistinguible del segmento. Si lo comparamos, por ejemplo, con la cuenta de Daniel Filmus los valores serían los siguientes: $$348.6_{mil} / 598 = 560.6$$ 
 
 
 En la cola del *ranking*  $8/10$ cuentas no superan la barrera de los $300$ seguidores y $6$ de ellos tienen menos de $200$. 
@@ -143,7 +143,7 @@ include_graphics("https://raw.githubusercontent.com/mentaComunicacion/data_posts
 * Tres diputadas son seguidas por solo un colega: `MelinaDelu`, `Adriana_Ruarte` y `graciela_navarr`.
 * Con $119$ colegas que lo *siguen*, `sergiomassa` lidera el ranking. Esto también es cierto cuando se restringe la cuenta para analizar solamente quién es el más seguido por opositores ($65$). Si calculamos en cambio quién es más seguido únicamente por miembros de un mismo espacio `marioraulnegri` lidera el *ranking* ($88$ seguidores).
 * $50$ de las cuentas siguen a menos de $10$ de sus pares.  
-* `sergiomassa`  es también el más *seguidor* con $146$ de sus pares entre sus *follows*. Lo secunda `_alvarogonazalez` con $98$. 
+* `sergiomassa`  es también el más *seguidor* con $146$ de sus pares entre sus *follows*. Lo secunda `_alvarogonzalez` con $98$. 
 
 
 
