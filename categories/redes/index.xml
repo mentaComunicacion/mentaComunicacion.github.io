@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>redes on mentaComunicación</title>
-    <link>https://mentacomunicacion.github.io/categories/redes/</link>
+    <link>/categories/redes/</link>
     <description>Recent content in redes on mentaComunicación</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 13 Nov 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://mentacomunicacion.github.io/categories/redes/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/redes/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Interacciones en Twitter</title>
-      <link>https://mentacomunicacion.github.io/2019/11/13/interacciones-en-twitter/</link>
+      <link>/2019/11/13/interacciones-en-twitter/</link>
       <pubDate>Wed, 13 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://mentacomunicacion.github.io/2019/11/13/interacciones-en-twitter/</guid>
+      <guid>/2019/11/13/interacciones-en-twitter/</guid>
       <description>Análisis del equipo de datos de mentaComunicación1
 Twitter es la plataforma preferida para el análisis de datos políticos en redes. Hay por lo menos dos razones que lo explican: (a) es allí donde la mayoría de los dirigentes políticos se expresan (y, por ende, donde el público que consume información política interactúa); y (b) es la red que disponibiliza libremente grandes volumenes de información.</description>
     </item>
