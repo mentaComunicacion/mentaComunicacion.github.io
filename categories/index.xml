@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on mentaComunicación</title>
-    <link>/categories/</link>
+    <link>https://mentacomunicacion.github.io/categories/</link>
     <description>Recent content in Categories on mentaComunicación</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 13 Nov 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mentacomunicacion.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>redes</title>
-      <link>/categories/redes/</link>
+      <link>https://mentacomunicacion.github.io/categories/redes/</link>
       <pubDate>Wed, 13 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/categories/redes/</guid>
+      <guid>https://mentacomunicacion.github.io/categories/redes/</guid>
       <description></description>
     </item>
     
