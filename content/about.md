@@ -11,5 +11,5 @@ Este blog es un espacio para compartir ideas e investigaciones del equipo de dat
 
 * [***Inteligencia Electoral***](http://mentacomunicacion.com.ar/inteligencia-electoral/): Herramienta interactiva para la visualización de resultados de las elecciones presidenciales de Argentina (2015 – 2019)
 
-* [***Congreso Virtual***](http://congresovirtual.mentacomunicacion.com.ar/): App para analizar las relaciones y comportamiento de legisladores argentinos en Twitter. 
+* [***Congreso Virtual***](http://congresovirtual.mentacomunicacion.com.ar/): App para analizar las relaciones y comportamiento de legisladores y legisladoras nacionales en Twitter. 
 
