@@ -34,6 +34,7 @@ El promedio de cantidad de palabras utilizadas por discurso fue de 9880. Sin emb
 
 Con 2846 palabras, el discurso de CSM en 1996 fue el más corto, mientras que con 26189 palabras en 2013, CFK se lleva el récord del más largo (más del doble que el promedio). Incluso, en ésta última, se observa una tendencia creciente a través de los años (excepto en 2014). Por último, el discurso de este año encabezado por AF tuvo la misma duración que el promedio, más largo que que los de su antecesor, pero aún por debajo del promedio de los de NK y CFK.
 
+--- 
 
 Cuáles son las palabras qué más repiten los presidentes fue una de las primeras preguntas que comenzamos a hacernos. Una forma gráfica de explorarlo es a través de una nube de palabras comparativa en la que los términos que más veces se mencionan tienen mayor centralidad y son de mayor tamaño. 
 
@@ -120,9 +121,13 @@ include_graphics("https://raw.githubusercontent.com/mentaComunicacion/data_posts
 
 ```
 
-Los primeros discursos de FDR Y CSM fueron los que usaron más frecuentemente palabras vinculadas a política, mientras que el de MM fue el que tuvo la menor cantidad de palabras vinculadas a este tópico. Por otro lado, éste último es el que uso más frecuentemente palabras relacionadas a economía, mientras que CSM fue el que menos las utilizó.
+Si ponemos el foco sobre los términos de *política* utilizados más frecuentemente (representado por el tamaño de las etiquetas del lado derecho) se destacan "justicia", "nación" y "pueblo" por sobre "libertad", "derecho" y "diálogo". Y al analizar las palabras relacionadas al eje *economía* resaltan "crecimiento" y "desarrollo" por sobre el resto.
 
-Una última observación es que entre los términos de política utilizados más frecuentemente se destacan "justicia", "nación" y "pueblo" por sobre "libertad", "derecho" y "diálogo". Mientras que, entre las palabras relacionadas a la economía resaltan "crecimiento" y "desarrollo" por sobre el resto. 
+Otra manera de visualizar la información puede ser observar la ferecuencia con que los distintos discursos utilizaron alguno de los términos de cada tópico. Ello está representado por el ancho de los flujos de colores. Así, por ejemplo, se observa que las intervenciones en el primer discurso de MM se restringen solo a tres de los términos: "derecho", "diálogo" y "justicia" en el tópico *política*. O que las palabras más frecuentes de AF en el que refiere a *economía* fueron "deuda" y "desarrollo".
+
+Por último, calculamos que porcentaje del discurso representa la sumatoria de las palabras de cada uno de los ejes (representados en los cículos que refieren a cada uno de ellos). Así, por ejemplo, se observa que los primeros discursos de FDR Y CSM fueron los que usaron más frecuentemente palabras vinculadas a política como proporción de sus intervenciones, mientras que el de MM fue el que tuvo la menor cantidad de palabras vinculadas a este tópico. Por otro lado, éste último es el que utilizó proporcionalmente más veces palabras relacionadas a economía, mientras que CSM fue el que menos las utilizó.
 
 
-(***Todos las visualizaciones pueden descargarse de  [este repositorio](https://github.com/mentaComunicacion/data_posts/tree/master/discursos_asamblea)***)
+
+
+(***Todas las visualizaciones pueden descargarse de [este repositorio](https://github.com/mentaComunicacion/data_posts/tree/master/discursos_asamblea)***)
